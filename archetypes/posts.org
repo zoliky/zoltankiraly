@@ -1,0 +1,15 @@
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+author: Zoltan Kiraly
+year: "{{ dateFormat "2006" .Date }}"
+month: "{{ dateFormat "2006/01" .Date }}"
+draft: false
+---
+
+* Headline
+
+Org uses single characters to markup *bold* /italic/, _underline_, ~code~, and =verbatim=.
+Links also use minimal markup. [[https://gohugo.io/][Hugo Website]]
+
+More on markup: https://orgmode.org/manual/Markup-for-Rich-Contents.html

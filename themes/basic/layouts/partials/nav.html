@@ -1,0 +1,73 @@
+<nav class="main-navigation">
+  <button class="menu-toggle">
+    <svg class="icon icon-hamburger" aria-hidden="true" role="img">
+      <use href="#icon-hamburger" xlink:href="#icon-hamburger"></use>
+    </svg>
+    <svg class="icon icon-close" aria-hidden="true" role="img">
+      <use href="#icon-close" xlink:href="#icon-close"></use>
+    </svg> Menu
+  </button>
+
+  <div class="menu-container">
+    <ul id="top-menu" class="menu">
+    {{ $current := . }}
+    {{ range .Site.Menus.main }}
+    {{ $active := eq $.RelPermalink (.URL | relLangURL) }}
+    {{ $active = or $active (eq $.Section (lower .Name)) }}
+
+    <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end }}">
+      <a href="{{ .URL | absLangURL }}" class="{{ if $active }}active{{ end }}">
+        {{ .Name }}
+        {{ if .HasChildren }}
+        <svg class="icon icon-angle-down" aria-hidden="true" role="img">
+          <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+        </svg>
+        {{ end }}
+      </a>
+      {{ if .HasChildren }}
+      <button class="dropdown-toggle">
+        <svg class="icon icon-angle-down">
+          <use href="#icon-angle-down" xlink:href="#icon-angle-down" />
+        </svg>
+      </button>
+      <ul class="sub-menu">
+        {{ range .Children }}
+        <li class="menu-item {{ if .HasChildren }}menu-item-has-children{{ end}}">
+          <a href="{{ .URL | absLangURL }}">
+            {{ .Name }}
+            {{ if .HasChildren }}
+            <svg class="icon icon-angle-down">
+              <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+            </svg>
+            {{ end }}
+          </a>
+          {{ if .HasChildren }}
+          <button class="dropdown-toggle">
+            <svg class="icon icon-angle-down">
+              <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+            </svg>
+          </button>
+          <ul class="sub-menu">
+            {{ range .Children }}
+            <li class="menu-item">
+              <a href="{{ .URL | absLangURL }}">
+                {{ .Name }}
+                {{ if .HasChildren }}
+                <svg class="icon icon-angle-down">
+                  <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+                </svg>
+                {{ end }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </li>
+    {{ end }}
+    </ul>
+  </div>
+</nav>

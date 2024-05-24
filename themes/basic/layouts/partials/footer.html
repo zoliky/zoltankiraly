@@ -1,0 +1,10 @@
+<footer class="footer">
+  <div class="footer-col-1">
+    <p class="copyright">{{ with replace .Site.Params.copyright "{currentYear}" now.Year }}{{ . | markdownify }}{{ end }}</p>
+    <p class="footersecond">Built with <a href="https://gohugo.io/" target="_blank">GoHugo</a><br/>Blush theme designed by Zoltan Kiraly</p>
+  </div>
+  <!--
+  <div class="footer-col-2">
+    {{ partial "social.html" . }}
+  </div>-->
+</footer>

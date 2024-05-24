@@ -1,0 +1,43 @@
+---
+title: "About"
+type: about
+draft: false
+---
+
+Table
+
+| First   | Second  | Third   | Fourth | Fifth |
+|---------|---------|---------|--------|-------|
+| First   | Second  | Third   | Fourth | Fifth |
+| First   | Second  | Third   | Fourth | Fifth |
+| First   | Second  | Third   | Fourth | Fifth |
+| First   | Second  | Third   | Fourth | Fifth |
+| First   | Second  | Third   | Fourth | Fifth |
+
+Code block
+
+TODO: Improve syntax highlighting
+
+#+begin_src javascript
+"use strict";
+
+const panelHeader = document.querySelectorAll(".panel-header");
+
+panelHeader.forEach(value => {
+  value.addEventListener("click", event => {
+    event.preventDefault();
+    value.parentElement.classList.toggle("open");
+    const panel = value.nextElementSibling;
+    panel.style.height = panel.style.height ? null : panel.scrollHeight + "px";
+  });
+});
+#+end_src
+
+** A list
+
+- First item
+- Second item
+- Third item
+  - Third sub item
+  - Third sub item 2
+- Fourth item

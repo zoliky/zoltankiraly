@@ -1,0 +1,10 @@
+{{ $image := $.Page.Resources.GetMatch (.Get 0) }}
+{{ $smallImage := $image.Resize "800x" }}
+
+<figure class="post-figure">
+  <a href="{{ $image.RelPermalink }}">
+    {{ with $smallImage }}
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Get 1 }}" loading="lazy" />
+    {{ end }}
+  </a>
+</figure>

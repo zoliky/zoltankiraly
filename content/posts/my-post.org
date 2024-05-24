@@ -1,0 +1,14 @@
+---
+title: "My Post"
+date: 2021-01-09T12:58:56+02:00
+author: Zoltan Kiraly
+year: "2021"
+month: "2021/01"
+categories:
+- Personal
+- Thoughts
+tags:
+- software
+- html
+draft: false
+---

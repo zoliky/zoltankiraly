@@ -1,0 +1,182 @@
+# ----------------------------------------------------------------------------
+#           FILE: config.toml
+#    DESCRIPTION: Hugo configuration file
+#         AUTHOR: Zoltán Király <zoliky@gmail.com>
+# ----------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------
+# General configuration
+# ----------------------------------------------------------------------------
+title        = "Zoltan Kiraly"
+baseURL      = "https://zoltankiraly.com"
+languageCode = "en-US"
+theme        = "basic"
+# The number of posts per page
+paginate     = 2
+
+pygmentsUseClasses     = true
+
+# Fall back to English if no translations are available
+defaultContentLanguage = "en"
+
+# Disabled languages
+# e.g. ["hu", "es", "de"]
+disableLanguages       = []
+
+# ----------------------------------------------------------------------------
+# Default site params
+# ----------------------------------------------------------------------------
+[params]
+  author      = "Zoltan Kiraly"
+  description = "Zoltan Kiraly"
+  copyright   = "© {currentYear} Zoltan Kiraly"
+  images      = ["site-social.png"]
+  twittercard = true
+  opengraph   = true
+
+# ----------------------------------------------------------------------------
+# Languages
+# ----------------------------------------------------------------------------
+[languages]
+
+  # English
+  # --------------------------------------------------------------------------
+  [languages.en]
+    weight = 1
+    languageName = "English"
+
+    # Menu
+    [[languages.en.menu.main]]
+      name   = "Home"
+      url    = "/"
+      weight = 1
+
+    [[languages.en.menu.main]]
+      name   = "About"
+      url    = "/about/"
+      weight = 2
+      
+    [[languages.en.menu.main]]
+      name   = "Blog"
+      url    = "/posts/"
+      weight = 3
+
+    [[languages.en.menu.main]]
+      name       = "My GitHub"
+      url        = "https://github.com/zoliky"
+      weight     = 4
+
+    [[languages.en.menu.main]]
+      name       = "Contact"
+      url        = "/contact/"
+      weight     = 5
+
+  # Hungarian
+  # --------------------------------------------------------------------------
+  # Override general configuration
+  [languages.hu]
+    title        = "Új Hugo Weboldal"
+    languageCode = "hu"
+    languageName = "Hungarian"
+    weight       = 2
+  
+    # Override default site params
+    [languages.hu.params]
+      description  = "Új Hugo Weboldal"
+      copyright    = "Copyright {currentYear} King Web Solutions. Minden jog fenntartva."
+
+    [[languages.hu.menu.main]]
+      name   = "Címlap"
+      url    = "/"
+      weight = 1
+
+    [[languages.hu.menu.main]]
+      name   = "Rólunk"
+      url    = "/about/"
+      identifier = "about"
+      weight = 2
+
+    [[languages.hu.menu.main]]
+      name   = "Blog"
+      url    = "/posts/"
+      weight = 3
+
+    [[languages.hu.menu.main]]
+      identifier = "services"
+      name       = "Szolgáltatások"
+      url        = "/services/"
+      weight     = 4
+    
+    # Sub-menu
+    [[languages.hu.menu.main]]
+      identifier = "marketing"
+      parent     = "services"
+      name       = "Marketing"
+      url        = "/marketing/"
+      weight     = 4
+    
+    # Sub sub-menu
+    [[languages.hu.menu.main]]
+      parent = "marketing"
+      name   = "SEO"
+      url    = "/seo/"
+      weight = 4
+
+# ----------------------------------------------------------------------------
+# Posts
+# ----------------------------------------------------------------------------
+# Permalinks
+[permalinks]
+  posts = "posts/:year/:month/:slug"
+  year  = "/posts/:slug/"
+  month = "/posts/:slug/"
+
+# Taxonomies
+[taxonomies]
+  year     = "year"
+  month    = "month"
+  tag      = "tags"
+  category = "categories"
+
+# Related content
+[related]
+  threshold    = 80.0
+  includeNewer = false
+  toLower      = false
+
+  [[related.indices]]
+    name   = "keywords"
+    weight = 100.0
+  
+  [[related.indices]]
+    name   = "date"
+    weight = 10.0
+
+
+# ----------------------------------------------------------------------------
+# Social
+# ----------------------------------------------------------------------------
+[social]
+  twitter = "zoliky"
+
+  [[params.social]]
+    icon  = "ico-facebook"
+    title = "Connect with us on Facebook"
+    url   = "https://www.facebook.com/zoliky"
+
+  [[params.social]]
+    icon  = "ico-twitter"
+    title = "Follow us on Twitter"
+    url   = "https://twitter.com/zoliky"
+  
+  [[params.social]]
+    icon  = "ico-email"
+    title = "Contact us via email"
+    url   = "mailto:youremail@example.com"
+
+# ----------------------------------------------------------------------------
+# Security
+# ----------------------------------------------------------------------------
+[security]
+  [security.exec]
+    allow = ['^go$', '^npx$', '^postcss$', '^babel$']

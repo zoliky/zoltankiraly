@@ -1,0 +1,10 @@
+<ul class="social">
+  {{ range .Site.Params.social }}
+  <li>
+    <a href="{{ .url }}" target="_blank" rel="noopener">
+      <i aria-hidden="true" class="{{ .icon }}" title="{{ .title }}"></i>
+      <span class="screen-readers">{{ .title }}</span>
+    </a>
+  </li>
+  {{ end }}
+</ul>

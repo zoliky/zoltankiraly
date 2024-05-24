@@ -1,0 +1,215 @@
+$toggle-btn-color: #fff;
+$main-nav-bg: #4A8C88;
+
+// Menu toggle button
+.menu-toggle {
+  border: 0;
+  padding: 1em;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 1px auto 2px;
+  background: transparent;
+  color: $toggle-btn-color;
+
+  &:focus {
+    outline: thin solid #ccc;
+  }
+}
+
+.main-navigation {
+  background: $main-nav-bg;
+  
+  .icon {
+    position: relative;
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+    top: -0.1225em;
+    vertical-align: middle;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  &.toggled-on {
+    .icon-hamburger {
+      display: none;
+    }
+
+    .icon-close {
+      display: inline-block;
+    }
+
+    .menu {
+      display: block;
+    }
+  }
+
+  ul {
+    margin: 0;
+    display: none;
+    background: #fff;
+    list-style: none;
+    text-align: left;
+
+    ul {
+      padding: 0 0 0 1.5em;
+
+      &.toggled-on {
+        display: block;
+      }
+    }
+
+    a > .icon {
+      display: none;
+    }
+  }
+
+  li {
+    position: relative;
+    border-bottom: 1px solid #eee;
+
+    li {
+      border: 0;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  a {
+    display: block;
+    padding: .8em 0;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #767676;
+    }
+
+    &:focus {
+      outline: thin dotted;
+    }
+  }
+}
+
+.menu {
+  padding: 0.75em 1.695em;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: 0;
+  color: #222;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -0.5em;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  box-shadow: none;
+  text-shadow: none;
+  line-height: 1.5;
+  font-size: 16px;
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &.toggled-on .icon {
+    transform: rotate(-180deg);
+  }
+}
+
+@media (min-width: 52em) {
+  .menu-toggle,
+  .dropdown-toggle {
+    display: none;
+  }
+
+  .main-navigation {
+    width: auto;
+    margin: 1.5em 1em;
+
+    ul {
+      border: 0;
+      padding: 0;
+      display: block;
+      background: #fff7f7;
+
+      ul {
+        position: absolute;
+        border: 1px solid #bbb;
+        left: -999em;
+        padding: 0;
+        top: 100%;
+        z-index: 99999;
+
+        ul {
+          left: -999em;
+          margin-top: -1px;
+          top: 0;
+        }
+
+        .menu-item-has-children > a .icon {
+          margin-top: -9px;
+          position: absolute;
+          left: auto;
+          right: 1em;
+          top: 50%;
+          transform: rotate(-90deg);
+        }
+
+        a {
+          padding: 0.75em 1.25em;
+          width: 16em;
+        }
+
+        li:hover > ul,
+        li:focus-within > ul {
+          left: 100%;
+          right: auto;
+        }
+      }
+
+      li:hover > ul,
+      li:focus-within > ul {
+        left: 0.5em;
+        right: auto;
+      }
+    }
+
+    li {
+      border: 0;
+      /*display: inline-block;*/
+
+      li {
+        display: block;
+        transition: background-color 5s ease-in-out;
+
+        &:hover > a,
+        a:focus {
+          color: #fff;
+          background: #767676;
+        }
+      }
+    }
+
+    a {
+      color: #000;
+      font-weight: bold;
+      padding: .7em 0;
+    }
+
+    .menu-item-has-children > a > .icon {
+      display: inline;
+      position: relative;
+      left: 5px;
+      top: -1px;
+    }
+  }
+}
