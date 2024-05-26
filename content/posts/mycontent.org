@@ -1,5 +1,5 @@
 ---
-title: "First Release Candidate of FreeBSD 14.1"
+title: "FreeBSD 14.1-RC1"
 date: 2024-05-18T03:20:01+02:00
 author: Zoltan Kiraly
 year: "2024"
@@ -15,7 +15,7 @@ keywords:
 draft: false
 ---
 
-Test post
+I've been running the first release candidate of FreeBSD 14.1 for a few days now, and it's rock stable. The final release will probably be out at the end of this week.
 
 {{< figure src="fbsd.png" link="fbsd.png" >}}
 
