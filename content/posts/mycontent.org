@@ -1,5 +1,5 @@
 ---
-title: "Emacs Org Mode"
+title: "First Release Candidate of FreeBSD 14.1"
 date: 2024-05-18T03:20:01+02:00
 author: Zoltan Kiraly
 year: "2024"
@@ -15,9 +15,9 @@ keywords:
 draft: false
 ---
 
-YouTube video
+Test post
 
-{{< youtube JdikRIwrSAU >}}
+{{< figure src="fbsd.png" link="fbsd.png" >}}
 
 Terminal code test
 
