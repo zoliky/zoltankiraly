@@ -15,11 +15,12 @@ keywords:
 draft: false
 ---
 
-I've been running the first release candidate of FreeBSD 14.1 for a few days now, and it's rock stable. The final release will probably be out at the end of this week.
 
 {{< figure src="https://zoltankiraly.com/posts/fbsd.png" link="https://zoltankiraly.com/posts/fbsd.png" >}}
 
-Terminal code test
+<!--more-->
+
+This blog post is for testing purposes.
 
 #+begin_src sh
   $ uname -a
@@ -27,7 +28,3 @@ Terminal code test
   $ sudo dnf install emacs
   $ mkdir ~/.emacs.d
 #+end_src
-
-<!--more-->
-
-Content
