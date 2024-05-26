@@ -1,5 +1,5 @@
 ---
-title: "My first blog post"
+title: "Emacs Org Mode"
 date: 2024-05-18T03:20:01+02:00
 author: Zoltan Kiraly
 year: "2024"
@@ -15,6 +15,10 @@ keywords:
 draft: false
 ---
 
+YouTube video
+
+{{< youtube JdikRIwrSAU >}}
+
 Terminal code test
 
 #+begin_src sh
@@ -24,4 +28,4 @@ Terminal code test
   $ mkdir ~/.emacs.d
 #+end_src
 
-Thanks for *stopping by! This* blog will be my space to share my journey and talk about things I'm passionate about, including music I enjoy. The website is still a work in progress, so the design might change as I work on it. Since I'll be covering different topics that not everyone might be into, I'll make separate RSS feeds for each subject. That way, you can subscribe to just the topics you're interested in.
+Content
