@@ -63,16 +63,22 @@ Next, configure "rclone." The detailed steps are available on the rclone Dropbox
 
 Now it's time to mount Dropbox as a drive. For a regular user to mount it, you need to run:
 
-# sysctl vfs.usermount=1
+#+begin_src sh
+  # sysctl vfs.usermount=1
+#+end_src
 
 Also, add vfs.usermount=1 to /etc/sysctl.conf so it persists after a reboot.
 
 Create a folder named "Dropbox" in your home directory and mount Dropbox in it:
 
-$ cd ~
-$ mkdir Dropbox
-$ rclone mount remote: ~/Dropbox
+#+begin_src sh
+  $ cd ~
+  $ mkdir Dropbox
+  $ rclone mount remote: ~/Dropbox
+#+end_src
 
 You may notice that reading and writing to Dropbox is a bit slower when using rclone. While this is true, the performance difference isn't significant enough to be a deal breaker. It's sufficient for accessing your documents, pictures, and other files from Dropbox. You can speed things up a bit by mounting with the following command:
 
-$ rclone mount remote: ~/Dropbox --vfs-cache-mode
+#+begin_src sh
+  $ rclone mount remote: ~/Dropbox --vfs-cache-mode full
+#+end_src
