@@ -12,7 +12,7 @@ baseURL      = "https://zoltankiraly.com"
 languageCode = "en-US"
 theme        = "basic"
 # The number of posts per page
-paginate     = 3
+paginate     = 2
 
 pygmentsUseClasses     = true
 
@@ -50,21 +50,11 @@ disableLanguages       = []
       name   = "Home"
       url    = "/"
       weight = 1
-
-    [[languages.en.menu.main]]
-      name   = "About"
-      url    = "/about/"
-      weight = 2
       
     [[languages.en.menu.main]]
       name   = "Blog"
       url    = "/posts/"
-      weight = 3
-
-    [[languages.en.menu.main]]
-      name       = "My GitHub"
-      url        = "https://github.com/zoliky"
-      weight     = 4
+      weight = 2
 
     [[languages.en.menu.main]]
       name       = "Contact"
