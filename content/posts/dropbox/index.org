@@ -1,0 +1,78 @@
+---
+title: "How to Use Dropbox on FreeBSD"
+date: 2024-06-01T15:19:39+02:00
+author: Zoltan Kiraly
+categories:
+- FreeBSD
+- Tutorial
+tags:
+- dropbox
+keywords:
+- dropbox
+draft: false
+---
+
+There's no official package to install Dropbox on FreeBSD. While you can access Dropbox through a web browser, it's not the most convenient method. However, with the rclone program, you can mount Dropbox as a drive, simplifying access directly from your file manager.
+
+{{< figure src="https://zoltankiraly.com/posts/thunar.png" link="https://zoltankiraly.com/posts/thunar.png" >}}
+
+<!--more-->
+
+Now, let's get started with installing rclone. Just open your terminal and type:
+
+#+begin_src sh
+  # pkg install rclone
+#+end_src
+
+Next, rclone requires the FUSE kernel module to be loaded. You can do this by running kldload in the terminal:
+
+#+begin_src sh
+  # kldload fusefs
+#+end_src
+
+However, this setting won't persist after a reboot, so you'll also need to add it to /etc/rc.conf to ensure FUSE loads when FreeBSD starts. Execute the following command:
+
+#+begin_src sh
+  # sysrc kld_list+=fusefs
+#+end_src
+
+Next, configure "rclone." The detailed steps are available on the rclone Dropbox configuration page, but here's a summary:
+
+1. Run the setup command:
+
+   $ rclone setup
+
+2. Type "n" to select the "New Remote" option.
+
+3. Enter a name for the remote, for example, "remote":
+
+   name> remote
+
+4. When asked for storage, type "dropbox" (all lowercase):
+
+   storage> dropbox
+
+5. For the client_id and client_secret, leave them empty and just press enter:
+
+   client_id> <enter>
+   client_secret> <enter>
+
+6. You will be asked to use a web browser to authenticate. Answer with "y" and you will be redirected to the Dropbox website to grant permission for rclone. Allow it.
+
+7. Finally, select "y" to keep the remote and quit the rclone configuration with "w".
+
+Now it's time to mount Dropbox as a drive. For a regular user to mount it, you need to run:
+
+# sysctl vfs.usermount=1
+
+Also, add vfs.usermount=1 to /etc/sysctl.conf so it persists after a reboot.
+
+Create a folder named "Dropbox" in your home directory and mount Dropbox in it:
+
+$ cd ~
+$ mkdir Dropbox
+$ rclone mount remote: ~/Dropbox
+
+You may notice that reading and writing to Dropbox is a bit slower when using rclone. While this is true, the performance difference isn't significant enough to be a deal breaker. It's sufficient for accessing your documents, pictures, and other files from Dropbox. You can speed things up a bit by mounting with the following command:
+
+$ rclone mount remote: ~/Dropbox --vfs-cache-mode
