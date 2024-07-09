@@ -8,6 +8,6 @@ draft: false
 
 This website is under construction. There is no fixed time for when it will be completed. I might start adding content while the design remains incomplete for a period of time, but this will not affect the readability of the information.
 
-Places you can find me online: [[https://github.com/zoliky][Github]], [[https://linkedin.com/in/zoliky][LinkedIn]], [[https://x.com/zoliky][Twitter]], [[https://www.facebook.com/zoliky][Fa+c+kebook]]
+Places you can find me online: [[https://github.com/zoliky][Github]], [[https://linkedin.com/in/zoliky][LinkedIn]], [[https://x.com/zoliky][Twitter]], [[https://www.facebook.com/zoliky][Facebook]]
 
 Love letters can be addressed to: [[mailto:public@zoltankiraly.com][public@zoltankiraly.com]]
