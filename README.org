@@ -3,4 +3,4 @@
 #+EMAIL: zoliky@gmail.com
 #+DATE: <2021-01-06 Wed>
 
-*Work in Progress*
+*Work in Progress*.
