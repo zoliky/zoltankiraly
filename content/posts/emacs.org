@@ -27,10 +27,10 @@ If you have enough disk space, go ahead and install texlive-full with this comma
 # pkg install texlive-full
 #+end_src
 
-If you’re low on storage, or you don’t want to install such a large package, there’s a smaller option that still covers most LaTeX needs. I usually go with texlive-xetex, which is much smaller but still includes all the essential tools:
+If you’re low on storage, or you don’t want to install such a large package, there’s a smaller option that still covers most LaTeX needs. I usually go with tex-xetex, which is much smaller but still includes all the essential tools:
 
 #+begin_src sh
-# pkg install texlive-xetex
+# pkg install tex-xetex
 #+end_src
 
 If you need extra packages that aren’t included, you can add them using tlmgr, the TeX Live package manager. For example, to install the pgfplots package, run:
