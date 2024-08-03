@@ -103,7 +103,7 @@ To start a new Org document, use this front matter:
 The content of your document
 #+end_src
 
-When you’re ready to export to PDF, press C-c C-e (Control-C followed by Control-E) to open the Org Export Dispatcher. Then select Export to LaTeX => As PDF File.
+When you’re ready to export to PDF, press C-c C-e (Control-C followed by Control-E) in Emacs to open the Org Export Dispatcher. Then select Export to LaTeX => As PDF File.
 
 {{< figure src="https://zoltankiraly.com/posts/orgexport.jpg" link="https://zoltankiraly.com/posts/orgexport.jpg" >}}
 
