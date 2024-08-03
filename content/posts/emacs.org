@@ -99,6 +99,6 @@ To start a new Org document, use this header:
 The content of your document
 #+end_src
 
-When you’re ready to export to PDF, press C-c C-e (Control-C followed by Control-E) and choose Export to LaTeX -> PDF File from the menu.
+When you’re ready to export to PDF, press C-c C-e (Control-C followed by Control-E) in Emacs and choose Export to LaTeX -> PDF File from the menu.
 
 If you run into any errors during the PDF export, check the buffer named =*Org PDF Latex*= in Emacs. It’s the best way to see what’s going wrong or what’s missing. These log messages can help you figure out if you need to install any additional packages with tlmgr, as mentioned earlier.
