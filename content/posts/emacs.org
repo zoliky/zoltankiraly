@@ -78,7 +78,7 @@ Here’s what export.org looks like:
 #+begin_src emacs-lisp
 #+LaTeX_CLASS: org-plain-latex
 #+LaTeX_CLASS_OPTIONS: [a4paper, 11pt]
-#+OPTIONS: toc:nil <- Disables the table of contents
+#+OPTIONS: toc:nil <- Disables the table of contents in documents
 #+LATEX_HEADER: \setcounter{secnumdepth}{5}
 #+LATEX_HEADER: \setcounter{tocdepth}{4}
 
