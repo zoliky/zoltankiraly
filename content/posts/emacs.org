@@ -88,7 +88,9 @@ Here’s what export.org looks like:
 #+LATEX_HEADER: \setmainfont{Charis SIL}
 #+end_src
 
-I'm using the name "org-plain-latex", but you can choose a different name if you like. Just make sure to use the same name in both your init.el and export.org files.
+The file is pure LaTeX, but each line is prefixed with Org mode tags like #+LATEX_HEADER:. This helps Emacs handle it properly.
+
+NOTE: I'm using the name "org-plain-latex", but you can choose a different name if you like. Just make sure to use the same name in both your init.el and export.org files.
 
 To start a new Org document, use this header:
 
