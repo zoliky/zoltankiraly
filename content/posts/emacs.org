@@ -69,7 +69,7 @@ As for Emacs, here’s how I’ve set things up in my init.el file:
        ("\\subparagraph{%s}"  . "\\subparagraph*{%s}"))))
 #+end_src
 
-Does it look like a foreign language to you? Don't worry, you can just copy and paste it into your ~/.emacs.d/init.el file. The main thing is to have use-package installed. If you're using Emacs 29.x, use-package is already included in Emacs core, so you don't need to install it.
+Does it look like a foreign language to you? Don't worry, you can just copy and paste it into your ~/.emacs.d/init.el file. The main thing is to have use-package installed. If you're using Emacs 29.x, use-package is already included in Emacs core, so you don't need to install anything.
 
 I also use a separate file called export.org to manage settings like paper size, font, font size, and margins. This helps keep my Org documents clean and avoids repeating these settings in every document.
 
