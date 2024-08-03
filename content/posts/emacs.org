@@ -1,0 +1,106 @@
+---
+title: "Using Emacs with LaTeX on FreeBSD"
+date: 2024-08-03T03:20:01+02:00
+author: Zoltan Kiraly
+year: "2024"
+month: "2024/08"
+categories:
+- Emacs
+- FreeBSD
+tags:
+- emacs
+- freebsd
+keywords:
+- emacs
+draft: false
+---
+
+{{< figure src="https://zoltankiraly.com/posts/latex.jpg" link="https://zoltankiraly.com/posts/latex.png" >}}
+
+
+If you want to use LaTeX on FreeBSD, the texlive-full package is a great choice for a complete setup. It includes almost everything you need for typesetting documents, but it takes up more than 7GB of space.
+
+<!--more-->
+
+If you have enough disk space, go ahead and install texlive-full with this command:
+
+#+begin_src sh
+# pkg install texlive-full
+#+end_src
+
+If you’re low on storage, or you don’t want to install such a large package, there’s a smaller option that still covers most LaTeX needs. I usually go with texlive-xetex, which is much smaller but still includes all the essential tools:
+
+#+begin_src sh
+# pkg install texlive-xetex
+#+end_src
+
+If you need extra packages that aren’t included, you can add them using tlmgr, the TeX Live package manager. For example, to install the pgfplots package, run:
+
+#+begin_src sh
+# tlmgr install pgfplots
+#+end_src
+
+To check if everything is working, open your terminal, type latex (all lowercase), and press Enter. You should see a message confirming that LaTeX is set up and ready to use.
+
+#+begin_src sh
+zoltan@king:~ $ latex
+  This is pdfTeX, Version 3.141592653-2.6-1.40.26 (Web2C 2024)
+  (preloaded format=latex) restricted \write18 enabled.
+#+end_src
+
+As for Emacs, here’s how I’ve set things up in my init.el file:
+
+#+begin_src emacs-lisp
+  (use-package ox-latex
+    :ensure nil
+    :defer 0.5
+    :custom
+    (org-latex-compiler "xelatex")
+    :config
+    (add-to-list
+     'org-latex-classes
+     '("org-plain-latex"
+       "\\documentclass{article}
+       [NO-DEFAULT-PACKAGES]
+       [PACKAGES]
+       [EXTRA]"
+       ("\\section{%s}"       . "\\section*{%s}")
+       ("\\subsection{%s}"    . "\\subsection*{%s}")
+       ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+       ("\\paragraph{%s}"     . "\\paragraph*{%s}")
+       ("\\subparagraph{%s}"  . "\\subparagraph*{%s}"))))
+#+end_src
+
+I also use a separate file called export.org to manage settings like paper size, font, font size, and margins. This helps keep my Org documents clean and avoids repeating these settings in every document.
+
+Here’s what export.org looks like:
+
+#+begin_src emacs-lisp
+#+LaTeX_CLASS: org-plain-latex
+#+LaTeX_CLASS_OPTIONS: [a4paper, 11pt]
+# #+OPTIONS: toc:nil
+#+LATEX_HEADER: \setcounter{secnumdepth}{5}
+#+LATEX_HEADER: \setcounter{tocdepth}{4}
+
+#+LATEX_HEADER: \usepackage[top=1in, bottom=1.25in, left=1.5in, right=1.5in]{geometry}
+
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \setmainfont{Charis SIL}
+#+end_src
+
+I'm using the name "org-plain-latex", but you can choose a different name if you like. Just make sure to use the same name in both your init.el and export.org files.
+
+To start a new Org document, use this header:
+
+#+begin_src emacs-lisp
+#+title: Name of Document
+#+author: Author Name
+#+date: Date
+#+setupfile: /path/to/export.org
+
+The content of your document
+#+end_src
+
+When you’re ready to export to PDF, press C-c C-e (Control-C followed by Control-E) and choose Export to LaTeX -> PDF File from the menu.
+
+If you run into any errors during the PDF export, check the buffer named =*Org PDF Latex*= in Emacs. It’s the best way to see what’s going wrong or what’s missing. These log messages can help you figure out if you need to install any additional packages with tlmgr, as mentioned earlier.
