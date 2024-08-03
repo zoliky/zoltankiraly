@@ -52,7 +52,6 @@ As for Emacs, here’s how I’ve set things up in my init.el file:
 #+begin_src emacs-lisp
   (use-package ox-latex
     :ensure nil
-    :defer 0.5
     :custom
     (org-latex-compiler "xelatex")
     :config
