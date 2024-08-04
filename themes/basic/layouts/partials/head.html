@@ -40,8 +40,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&family=Ovo&display=swap" rel="stylesheet">
 
   {{ "<!-- Styles -->" | safeHTML }}
-  {{- $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ $css := resources.Match "css/*.css" }}
+  {{ $css = $css | resources.Concat "styles.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
   {{ "<!-- Locales -->" | safeHTML }}
   <link rel="alternate" href="{{ .Site.BaseURL }}hu" hreflang="hu">
