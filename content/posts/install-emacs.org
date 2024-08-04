@@ -49,7 +49,20 @@ $ tar xvf emacs-29.4.tar.xz
 Install the following packages required for compiling Emacs:
 
 #+begin_src sh
-pkg install gcc14-devel gmake texinfo
+pkg install autoconf gcc14-devel gmake texinfo
 #+end_src
+
+Now, go into the directory where the tar.xz file was extracted and start by running:
+
+#+begin_src sh
+$ ./autogen_sh
+#+end_src
+
+If this completes without any errors, proceed with:
+
+#+begin_src sh
+./configure --prefix="$HOME/.local/emacs/" --without-compress-install --with-native-compilation --with-json --with-mailutils --with-tree-sitter CC=gcc-12 ac_cv_header_sys_sysinfo_h=no
+#+end_src
+
 
 Blog post work in progress.
