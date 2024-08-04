@@ -72,4 +72,12 @@ The next step is to run gmake. This process will take some time to complete. To 
 $ gmake -j4
 #+end_src
 
+Finally, proceed with the following command, which requires root privileges:
+
+#+begin_src sh
+# gmake install
+#+end_src
+
+Please pay attention to the symbols used: $ denotes commands run with normal user privileges, while # indicates commands that require root privileges. This pattern will be followed in all my blog posts.
+
 Blog post work in progress.
