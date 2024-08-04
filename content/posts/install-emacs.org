@@ -55,7 +55,7 @@ $ tar xvf emacs-29.4.tar.xz
 Now, go into the directory where the tar.xz file was extracted and start by running:
 
 #+begin_src sh
-$ ./autogen_sh
+$ ./autogen.sh
 #+end_src
 
 If this completes without any errors, proceed with:
