@@ -31,7 +31,7 @@ However, there might be times when you need to install Emacs from the official t
 
 Please note that the instructions provided here were tested on FreeBSD 14.1-RELEASE running an Xorg environment.
 
-Before making any changes, it's a good idea to take a snapshot of your system if you have FreeBSD installed on the ZFS filesystem. This way, you can easily revert back if something goes wrong during the process. To create a new snapshot, use the following command:
+Before making any changes, it's a good idea to take a snapshot of your system if you have FreeBSD installed on ZFS. This way, you can easily revert back if something goes wrong. To create a new snapshot, use the following command:
 
 #+begin_src sh
 # bectl create 2024-aug-04-before-installing-emacs
