@@ -41,7 +41,7 @@ Before making any changes, it's a good idea to take a snapshot of your system if
 # bectl create 2024-aug-04-before-installing-emacs
 #+end_src
 
-If you need to go back, simply select the snapshot in the FreeBSD boot menu, which is the first menu that shows up after you reboot your computer.
+Taking snapshots uses virtually no space and is completed in a fraction of a second. If you need to go back, simply select the snapshot in the FreeBSD boot menu, which is the first menu that shows up after you reboot your computer.
 
 Install the following packages required for compiling Emacs:
 
@@ -92,3 +92,9 @@ $ ./emacs
 #+end_src
 
 I will extend this blog post to include instructions on how to create desktop icons for easier access.
+
+Remove the snapshot:
+
+#+begin_src sh
+# bectl destroy 2024-aug-04-before-installing-emacs
+#+end_src
