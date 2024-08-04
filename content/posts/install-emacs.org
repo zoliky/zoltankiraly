@@ -24,7 +24,7 @@ When it comes to installing Emacs on FreeBSD, you have a few options. The easies
 Another option is to use the FreeBSD ports system:
 
 #+begin_src sh
-cd /usr/ports/editors/emacs && make install clean
+# cd /usr/ports/editors/emacs && make install clean
 #+end_src
 
 However, there might be times when you need to install Emacs from the official tar.xz source code. This could be because a new version is available that hasn't made it into the ports or binary packages yet, or because you want to compile Emacs with specific options to suit your needs. In this blog post, I will cover how to build Emacs from the official source code, giving you the flexibility to customize your installation exactly how you want it.
@@ -49,7 +49,7 @@ $ tar xvf emacs-29.4.tar.xz
 Install the following packages required for compiling Emacs:
 
 #+begin_src sh
-pkg install autoconf gcc14-devel gmake texinfo
+# pkg install autoconf gcc14-devel gmake texinfo
 #+end_src
 
 Now, go into the directory where the tar.xz file was extracted and start by running:
@@ -61,7 +61,7 @@ $ ./autogen_sh
 If this completes without any errors, proceed with:
 
 #+begin_src sh
-./configure --prefix="$HOME/.local/emacs/" --without-compress-install --with-native-compilation --with-json --with-mailutils --with-tree-sitter CC=gcc14 ac_cv_header_sys_sysinfo_h=no
+$ ./configure --prefix="$HOME/.local/emacs/" --without-compress-install --with-native-compilation --with-json --with-mailutils --with-tree-sitter CC=gcc14 ac_cv_header_sys_sysinfo_h=no
 #+end_src
 
 
