@@ -12,7 +12,7 @@ baseURL      = "https://zoltankiraly.com"
 languageCode = "en-US"
 theme        = "basic"
 # The number of posts per page
-paginate     = 2
+paginate     = 4
 
 pygmentsUseClasses     = true
 
