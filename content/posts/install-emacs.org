@@ -80,4 +80,11 @@ Finally, proceed with the following command, which requires root privileges:
 
 Please pay attention to the symbols used: $ denotes commands run with normal user privileges, while # indicates commands that require root privileges. This pattern will be followed in all my blog posts.
 
-Blog post work in progress.
+Finally, you can start Emacs by navigating to the .local/emacs/bin directory and running the ./emacs binary:
+
+#+begin_src sh
+$ cd ~/.local/emacs/bin
+$ ./emacs
+#+end_src
+
+I will extend this blog post to include instructions on how to create desktop icons for easier access.
