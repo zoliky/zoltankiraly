@@ -64,8 +64,12 @@ If this completes without any errors, proceed with:
 $ ./configure --prefix="$HOME/.local/emacs/" --without-compress-install --with-native-compilation --with-json --with-mailutils --with-tree-sitter CC=gcc14 ac_cv_header_sys_sysinfo_h=no
 #+end_src
 
-This will configure Emacs to be installed with native compilation support and other specified features.
+This command configures Emacs to be installed with native compilation support and other specified features. These flags generally suffice for most use cases.
 
+The next step is to run gmake. This process will take some time to complete. To speed it up, you can use the -j4 flag, replacing 4 with the number of cores your processor has. This allows the compilation to take full advantage of your CPU's capabilities.
 
+#+begin_src sh
+$ gmake -j4
+#+end_src
 
 Blog post work in progress.
