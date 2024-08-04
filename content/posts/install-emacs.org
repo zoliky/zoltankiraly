@@ -61,7 +61,7 @@ $ ./autogen_sh
 If this completes without any errors, proceed with:
 
 #+begin_src sh
-./configure --prefix="$HOME/.local/emacs/" --without-compress-install --with-native-compilation --with-json --with-mailutils --with-tree-sitter CC=gcc-12 ac_cv_header_sys_sysinfo_h=no
+./configure --prefix="$HOME/.local/emacs/" --without-compress-install --with-native-compilation --with-json --with-mailutils --with-tree-sitter CC=gcc14 ac_cv_header_sys_sysinfo_h=no
 #+end_src
 
 
