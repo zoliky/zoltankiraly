@@ -107,4 +107,4 @@ When you're ready to export to PDF, press C-c C-e (Control-C followed by Control
 
 {{< figure src="https://zoltankiraly.com/posts/orgexport.jpg" link="https://zoltankiraly.com/posts/orgexport.jpg" >}}
 
-If you run into any errors during the PDF export, check the buffer named =*Org PDF Latex*= in Emacs. It’s the best way to see what’s going wrong or what’s missing. These log messages can help you figure out if you need to install any additional packages with tlmgr, as mentioned earlier.
+If you run into any errors during the PDF export, check the buffer named =*Org PDF Latex*= in Emacs. It’s the best way to see what’s going wrong or what’s missing. These log messages can help you figure out if you need to install any additional packages with tlmgr, as mentioned earlier. Most errors are usually due to missing LaTeX packages or fonts.
