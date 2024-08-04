@@ -91,10 +91,10 @@ $ cd ~/.local/emacs/bin
 $ ./emacs
 #+end_src
 
-I will extend this blog post to include instructions on how to create desktop icons for easier access.
-
 Remove the snapshot:
 
 #+begin_src sh
 # bectl destroy 2024-aug-04-before-installing-emacs
 #+end_src
+
+I will extend this blog post to include instructions on how to create desktop icons for easier access.
