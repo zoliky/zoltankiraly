@@ -91,7 +91,7 @@ $ cd ~/.local/emacs/bin
 $ ./emacs
 #+end_src
 
-Remove the snapshot:
+You can remove snapshots if you wish, though it's not necessary. They take up virtually no space, and you can have thousands of them without issue.
 
 #+begin_src sh
 # bectl destroy 2024-aug-04-before-installing-emacs
