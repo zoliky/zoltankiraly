@@ -1,7 +1,0 @@
----
-title: "Szolgaltatasok"
-type: services
-draft: false
----
-
-Szolgaltatasok

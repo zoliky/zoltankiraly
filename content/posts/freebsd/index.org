@@ -1,5 +1,5 @@
 ---
-title: "Test post"
+title: "First post"
 date: 2024-05-01T15:19:39+02:00
 author: Zoltan Kiraly
 categories:
@@ -12,8 +12,6 @@ keywords:
 - first
 draft: false
 ---
-
-Image test
 
 {{< figure src="/images/mountains.webp" link="/posts/2024/05/images/mountains.webp" >}}
 
