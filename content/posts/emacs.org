@@ -15,7 +15,7 @@ keywords:
 draft: false
 ---
 
-{{< figure src="https://zoltankiraly.com/posts/latex.jpg" link="https://zoltankiraly.com/posts/latex.jpg" >}}
+{{< figure loading="lazy" src="https://zoltankiraly.com/posts/latex.jpg" link="https://zoltankiraly.com/posts/latex.jpg" >}}
 
 If you want to use LaTeX on FreeBSD, the texlive-full package is a great choice for a complete setup. It includes everything you need for typesetting documents, but it takes up more than 7GB of space.
 

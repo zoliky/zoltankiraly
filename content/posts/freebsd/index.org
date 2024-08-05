@@ -13,7 +13,7 @@ keywords:
 draft: false
 ---
 
-{{< figure src="/images/mountains.webp" link="/posts/2024/05/images/mountains.webp" >}}
+{{< figure loading="lazy" src="/images/mountains.webp" link="/posts/2024/05/images/mountains.webp" >}}
 
 <!--more-->
 

@@ -15,7 +15,7 @@ keywords:
 draft: false
 ---
 
-{{< figure src="https://zoltankiraly.com/posts/emacs.jpg" link="https://zoltankiraly.com/posts/emacs.jpg" >}}
+{{< figure loading="lazy" src="https://zoltankiraly.com/posts/emacs.jpg" link="https://zoltankiraly.com/posts/emacs.jpg" >}}
 
 When it comes to installing Emacs on FreeBSD, you have a few options. The easiest method is to use the binary package with the following command:
 
