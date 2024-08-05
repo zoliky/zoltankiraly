@@ -37,7 +37,7 @@
 }
 
 .post-summary {
-  margin-top: 2em;
+  margin: 2em 0 1.2em;
 }
 
 a.tag {
@@ -92,6 +92,10 @@ a.read-more {
     text-decoration: none;
     padding: 0.3em 0.8em;
   }
+}
+
+.related {
+  margin-top: 2em;
 }
 
 @media (min-width: 48em) {

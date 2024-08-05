@@ -1,6 +1,3 @@
-$toggle-btn-color: #fff;
-$main-nav-bg: #4A8C88;
-
 // Menu toggle button
 .menu-toggle {
   border: 0;
@@ -11,7 +8,7 @@ $main-nav-bg: #4A8C88;
   line-height: 1.5;
   margin: 1px auto 2px;
   background: transparent;
-  color: $toggle-btn-color;
+  color: #fff;
 
   &:focus {
     outline: thin solid #ccc;
@@ -19,7 +16,7 @@ $main-nav-bg: #4A8C88;
 }
 
 .main-navigation {
-  background: $main-nav-bg;
+  background: #4A8C88;
   
   .icon {
     position: relative;

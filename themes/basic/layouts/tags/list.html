@@ -1,5 +1,6 @@
 {{ define "main" }}
-<h2>{{ .Title }}</h2>
+<div class="something">
+<h2>Posts Tagged #{{ .Title }}</h2>
 
 {{ .Content }}
 
@@ -8,5 +9,5 @@
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
   {{ end }}
 </ul>
-
+</div>
 {{ end }}

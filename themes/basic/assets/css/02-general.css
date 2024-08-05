@@ -1,3 +1,8 @@
+:root {
+  font-size: 1em;
+  line-height: 1.15;
+}
+
 *,
 *::before,
 *::after {
@@ -7,8 +12,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 1em;
-  line-height: 1.15;
   background: #fff7f7;
   font-family: "Open Sans", sans-serif;
 }
@@ -55,6 +58,7 @@ figure img {
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto auto;
   grid-template-areas:
+    "header"
     "sidebar"
     "main"
     "footer";
@@ -231,4 +235,9 @@ table {
 .footersecond {
   margin-top: 0;
   font-size: 0.8rem;
+}
+
+/* tags */
+.main ul > li + li {
+  margin: 10px 0px;
 }
