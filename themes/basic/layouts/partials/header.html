@@ -3,11 +3,9 @@
     <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   </h1>
 
-<div class="book-search hidden">
-  <input type="text" id="book-search-input" placeholder="{{ i18n "Search" }}" aria-label="{{ i18n "Search" }}" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+  <form action="/search" method="GET">
+    <input type="search" name="q" id="search-query" placeholder="Search....">
+    <button type="submit">Search</button>
+  </form>
 
 </header>

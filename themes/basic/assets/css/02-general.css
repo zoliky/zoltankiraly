@@ -14,17 +14,15 @@ body {
 }
 
 h2 {
-  /*margin: 1em 0 1.4em;*/
   color: #a01f64;
-  font: {
-    size: 2rem;
-    weight: 400;
-    family: "Merriweather", serif;
-  }
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Merriweather", serif; 
 }
 
 h3 {
   color: #a01f64;
+  font-family: "Merriweather", serif;
 }
 
 p {
@@ -41,6 +39,16 @@ i {
   font-style: normal;
 }
 
+figure {
+  margin: 0; /* added */
+}
+
+/* Blog posts */
+figure img {
+  width: 100%;
+}
+
+
 .grid-container {
   display: grid;
   justify-content: center;
@@ -53,8 +61,8 @@ i {
   background: #f0f0f0;
   color: #1f2328;
   line-height: 1.6;
-}
-  /*&::-webkit-scrollbar {
+  
+  &::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     background-color: transparent;
@@ -70,24 +78,20 @@ i {
     background-color: #bbb;
   }
 }
-*/
-.src-sh {
 
-
-}
-
-header time {
-  color: red;
-}
-
-.main {
-  grid-area: main;
-  padding: 0 1em;
-  margin-bottom: 2.2em;
-}
-
-.footer {
-  grid-area: footer;
+table {
+  border-collapse: collapse;
+  margin: 0 0 1.5em;
+  width: 100%;
+    
+  & th, td {
+    padding: .5em;
+    text-align: left;
+  }
+    
+  & tr {
+    border-bottom: 1px solid #eee;
+  }
 }
 
 .button {
@@ -107,10 +111,25 @@ header time {
   background: #3b9ba7;
   transition: transform ease-in-out 250ms;
   box-shadow: -4px 3px 8px -3px rgba(0, 0, 0, .5);
+  border-radius: .4em;
 
   &:hover {
     transform: scale(1.1);
   }
+}
+
+header time {
+  color: red;
+}
+
+.main {
+  grid-area: main;
+  padding: 0 1em;
+  margin-bottom: 2.2em;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 .main-navigation {
@@ -144,11 +163,6 @@ header time {
 .site-avatar {
   margin: 0 0 20px;
   padding: 0 1em;
-}
-
-/* Blog posts */
-figure img {
-  width: 100%;
 }
 
 @media (min-width: 52em) {
