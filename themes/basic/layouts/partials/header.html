@@ -3,13 +3,11 @@
     <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   </h1>
 
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="/pagefind/pagefind-ui.js"></script>
-<div id="search"></div>
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({ element: "#search", showSubResults: true });
-  });
-</script>
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="{{ i18n "Search" }}" aria-label="{{ i18n "Search" }}" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 </header>
