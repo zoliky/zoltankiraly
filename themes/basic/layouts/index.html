@@ -1,5 +1,34 @@
 {{ define "main" }}
-<div class="something">
-  {{ .Content }}
-</div>
+<section class="blog">
+  <div class="blog-container">
+    <!--<h2>{{ .Title }}</h2>-->
+    {{ range .Paginator.Pages }}
+    <article class="blog-post">
+      <header>
+        <!--<time datetime="{{ .Date | dateFormat "2006-01-02" }}">{{ .Date | dateFormat "January 2, 2006" }}</time>  -->
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>
+          {{ with .Params.tags }}
+            {{ range . }}
+            <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+          {{ end }}
+        </p>
+      </header>
+      <section class="post-summary">
+        <p>{{ .Summary }}</p>
+      </section>
+        
+      <footer>
+        <p>
+          {{- if .Truncated -}}
+          <a class="read-more" href='{{ .RelPermalink }}'>Read more&hellip;</a>
+          {{- end -}}
+        </p>
+      </footer>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ template "_internal/pagination.html" . }}
 {{ end }}

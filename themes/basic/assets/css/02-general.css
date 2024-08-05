@@ -48,10 +48,16 @@ figure img {
   width: 100%;
 }
 
-
 .grid-container {
   display: grid;
+  grid-gap: 10px;
   justify-content: center;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "sidebar"
+    "main"
+    "footer";
 }
 
 .src pre {
@@ -109,7 +115,7 @@ table {
   padding: 0.57em 1.8em;
   border: 1px solid transparent;
   background: #3b9ba7;
-  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 300ms;
   box-shadow: -4px 3px 8px -3px rgba(0, 0, 0, .5);
   border-radius: .4em;
 
@@ -118,8 +124,15 @@ table {
   }
 }
 
-header time {
-  color: red;
+.visuallyhidden {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
 .main {
@@ -150,7 +163,7 @@ header time {
 /* Sidebar */
 .sidebar {
   grid-area: sidebar;
-  margin-top: 25px;
+  margin-top: 38px;
 }
 
 .site-logo {
