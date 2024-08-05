@@ -30,7 +30,7 @@ disableLanguages       = []
   author      = "Zoltan Kiraly"
   description = "Zoltan Kiraly"
   copyright   = "© {currentYear} Zoltan Kiraly"
-  images      = ["site-social.png"]
+  images      = ["site-social.jpg"]
   twittercard = true
   opengraph   = true
 
