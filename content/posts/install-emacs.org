@@ -22,7 +22,7 @@ When it comes to installing Emacs on FreeBSD, you have a few options. The easies
 <!--more-->
 
 #+begin_src sh
-# pkg install emacs
+  # pkg install emacs
 #+end_src
 
 Another option is to use the FreeBSD ports system:
