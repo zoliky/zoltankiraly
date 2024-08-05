@@ -33,20 +33,6 @@ Another option is to use the FreeBSD ports system:
 
 However, there might be times when you need to install Emacs from the official tar.xz source code. This could be because a new version is available that hasn't made it into the ports or binary packages yet, or because you want to compile Emacs with specific options to suit your needs. In this blog post, I will cover how to build Emacs from the official source code, giving you the flexibility to customize your installation exactly how you want it.
 
-#+caption: A table
-| First Column | Second Column | Third Column | Fourth Column |
-|--------------+---------------+--------------+---------------|
-| First row    |             2 |           78 |             9 |
-| Second row   |           908 |            7 |           678 |
-| Third row    |           789 |           97 |            78 |
-
-| First Column | Second Column |
-|--------------+---------------|
-| First        |           908 |
-| Second       |            89 |
-| Third        |           890 |
-|              |               |
-
 Please note that the instructions provided here were tested on FreeBSD 14.1-RELEASE running an Xorg environment.
 
 Before making any changes, it's a good idea to take a snapshot of your system if you have FreeBSD installed on ZFS. This way, you can easily revert back if something goes wrong. To create a new snapshot, use the following command:

@@ -145,10 +145,6 @@ table {
   grid-area: footer;
 }
 
-.main-navigation {
-  /*display: none;*/
-}
-
 /* header */
 .header {
   grid-area: header;
