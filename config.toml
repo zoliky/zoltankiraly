@@ -55,11 +55,6 @@ disableLanguages       = []
       name   = "About"
       url    = "/about/"
       weight = 2
-
-    [[languages.en.menu.main]]
-      name   = "RSS Feeds"
-      url    = "/feeds/"
-      weight = 3
       
     #[[languages.en.menu.main]]
     #  name   = "Blog"
@@ -69,7 +64,7 @@ disableLanguages       = []
     [[languages.en.menu.main]]
       name       = "Contact"
       url        = "/contact/"
-      weight     = 4
+      weight     = 3
 
   # Hungarian
   # --------------------------------------------------------------------------
