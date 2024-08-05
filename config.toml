@@ -117,14 +117,16 @@ disableLanguages       = []
 # ----------------------------------------------------------------------------
 # Permalinks
 [permalinks]
-  posts = "posts/:year/:month/:slug"
+  posts = "posts/:year/:month/:day/:slug"
   year  = "/posts/:slug/"
   month = "/posts/:slug/"
+  day   = "/posts/:slug"
 
 # Taxonomies
 [taxonomies]
   year     = "year"
   month    = "month"
+  day      = "day"
   tag      = "tags"
   category = "categories"
 
