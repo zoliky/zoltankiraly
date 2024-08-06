@@ -88,7 +88,7 @@ Finally, proceed with the following command, which requires root privileges:
 
 Please pay attention to the symbols used: $ denotes commands run with normal user privileges, while # indicates commands that require root privileges. This pattern will be followed in all my blog posts.
 
-Finally, you can start Emacs by navigating to the .local/emacs/bin directory and running the ./emacs binary:
+Finally, you can start Emacs by navigating to the ~.local/emacs/bin~ directory and running the ~./emacs~ binary:
 
 #+begin_src sh
 $ cd ~/.local/emacs/bin
@@ -100,5 +100,23 @@ You can remove the snapshot if you wish, although it's not necessary. As mention
 #+begin_src sh
 # bectl destroy 2024-aug-04-before-installing-emacs
 #+end_src
+
+I will extend this blog post to include instructions on how to create desktop icons for easier access.
+
+#+begin_quote
+This is a quote. Let's see how it looks.
+
+Second line in the quote
+#+end_quote
+
+I will extend this blog post to include instructions on how to create desktop icons for easier access.
+
+#+caption: Table 1. Caption
+| First Column | Second Column | Third Column |
+|--------------+---------------+--------------|
+| First row    |             8 |            7 |
+| Second row   |             8 |            2 |
+| Third row    |             7 |            9 |
+| Fourth row   |             7 |            8 |
 
 I will extend this blog post to include instructions on how to create desktop icons for easier access.
