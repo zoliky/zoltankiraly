@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section class="blog">
   <div class="blog-container">
+    <h2 class="visuallyhidden">{{ .Title }}</h2>
     {{ range .Paginator.Pages }}
     <article class="blog-post">
       <header>

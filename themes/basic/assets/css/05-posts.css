@@ -98,6 +98,10 @@ a.read-more {
   margin-top: 2em;
 }
 
+.blog-post footer p {
+  margin: 0;
+}
+
 @media (min-width: 48em) {
   .pagination {
     width: 50%;
