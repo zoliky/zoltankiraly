@@ -28,11 +28,23 @@
   & header h3 {
     font-family: "Merriweather", serif;
     margin: 0;
+    /*margin: 0 0 .3em 0;*/
     font-size: 2em;
 
     & a {
       color: #a01f64;
     }
+  }
+}
+
+.published-time {
+  font-family: "Open Sans";
+  font-size: 1em;
+  margin-top: .6em;
+
+  & a {
+    font-weight: bold;
+    color: #a01f64;
   }
 }
 
@@ -50,8 +62,13 @@ a.tag {
   display: inline-block;
   padding: .20em .8em;
   border-radius: 0.2em;
-  font-size: 0.9em;
-  text-decoration:  none;
+  font-size: 1em;
+  text-decoration: none;
+  margin-top: .10em;
+}
+
+a.tag + a.tag {
+  margin-left: .05em;
 }
 
 a.read-more {
