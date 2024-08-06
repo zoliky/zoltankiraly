@@ -8,9 +8,9 @@ This website is under construction. There is no fixed time for when it will be c
 
 In today's digital world, I firmly believe that everyone should have their own website. Why? Because it's a space you completely control and own. When you rely on big tech platforms like Facebook, you're at the mercy of their privacy policies and algorithms, which often prioritize engagement over authenticity.
 
-Facebook, in particular, can feel like a shallow place for real connections. It's almost as if it deserves a name change to 'faKebook', with a 'k' instead of a 'c', because it often presents a distorted version of reality.
+Facebook, in particular, can feel like a shallow place for real connections. It's almost as if it deserves a name change to 'faKebook', with a 'k' instead of a 'c', because that's what truly is, a false environment.
 
-LinkedIn might look like a better professional option, but it has its own set of issues. Many users post polished but sometimes misleading profiles, and the Free Software Foundation has even called out LinkedIn for sharing user emails with third parties, which is actually true. https://www.fsf.org/resources/webmail-systems Personally, I’m not interested in that kind of networking. I’d rather stay authentic and not pretend to be someone I’m not.
+LinkedIn might look like a better professional option, but it has its own set of issues. There's a lot of corporate talk and bullshit, as if companies are programmed with this kind of nonsense. I don’t know how people can fall for such crap. The Free Software Foundation has even called out LinkedIn for sharing user emails with third parties, which is actually true. https://www.fsf.org/resources/webmail-systemsPersonally Personally, I’m not interested in that kind of networking. I’d rather stay authentic and not pretend to be someone I’m not.
 
 Luke Smith is well known in the Linux community. While I'm not a follower of his work, I found his video on this topic to be very to the point. You can check it out here.
 
