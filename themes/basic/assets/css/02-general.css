@@ -128,6 +128,10 @@ table {
   }
 }
 
+figcaption {
+  text-align: center;
+}
+
 .button {
   display: inline-block;
   vertical-align: middle;

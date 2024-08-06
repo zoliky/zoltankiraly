@@ -6,14 +6,6 @@ draft: false
 
 This website is under construction. There is no fixed time for when it will be completed. I might start adding content while the design remains incomplete for a period of time, but this will not affect the readability of the information.
 
-I firmly believe that everyone should have their own website in today's world. Why? Because it's a space you completely control and own. When you rely on big tech platforms like Facebook, you're at the mercy of their privacy policies and algorithms, which often prioritize engagement over authenticity.
+Places you can find me online: [[https://github.com/zoliky][Github]], [[https://linkedin.com/in/zoliky][LinkedIn]], [[https://x.com/zoliky][Twitter]], [[https://www.facebook.com/zoliky][Facebook]]
 
-Facebook, in particular, is a shallow place for real connections. It's almost as if it deserves a name change to 'faKebook', with a 'k' instead of a 'c', because that's what truly is, a false environment.
-
-LinkedIn might look like a better option, but it has its own set of issues. The Free Software Foundation has even called out LinkedIn for sharing user emails with third parties, which is actually true. https://www.fsf.org/resources/webmail-systems Personally, I’m not interested in that kind of networking. I’d rather stay authentic and not pretend to be someone I’m not.
-
-{{< figure loading="lazy" src="https://zoltankiraly.com/linkedin.png" link="https://zoltankiraly.com/linkedin.png" alt="linkedin" >}}
-
-Luke Smith is well known in the Linux community. While I'm not a follower of his work, I found his video on this topic to be very to the point. You can check it out here.
-
-{{< youtube bdKZVIGRAKQ >}}
+Love letters can be addressed to: [[mailto:public@zoltankiraly.com][public@zoltankiraly.com]]
