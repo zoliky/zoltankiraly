@@ -4,9 +4,7 @@
     <article class="blog-post">
       <header>
         <h2>{{ .Title }}</h2>
-        <p>Posted on 
         <time datetime="{{ .Date | dateFormat "2006-01-02" }}">{{ .Date | dateFormat "January 2, 2006" }}</time>
-        <span class="posted-by">by {{ .Params.author }}</span></p>
       </header>
       <section class="post-content">
         {{ .Content }}
