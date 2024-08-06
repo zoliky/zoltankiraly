@@ -9,7 +9,7 @@
 .blog-post {
   /*font-family: "Roboto";*/
   background-color: #fff;
-  padding: 2em;
+  padding: 2em .8em;
   position: relative;
   margin: 1.5em -.5em;
   border-radius: 0.25em;
@@ -101,5 +101,11 @@ a.read-more {
 @media (min-width: 48em) {
   .pagination {
     width: 50%;
+  }
+}
+
+@media (min-width: 52em) {
+  .blog-post {
+    padding: 2em;
   }
 }

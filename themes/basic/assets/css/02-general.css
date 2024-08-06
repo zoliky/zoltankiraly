@@ -178,6 +178,20 @@ table {
   padding: 0 1em;
 }
 
+.something {
+  background: #fff;
+  padding: 0.5em .8em;
+  position: relative;
+  margin: 1.5em -.5em;
+  border-radius: 0.25em;
+  box-shadow:
+    -1px 2px 10px 1px rgba(46, 41, 51, 0.08),
+    1px 2px 5px rgba(71, 63, 79, 0.08);
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
 @media (min-width: 52em) {
   .grid-container {
     grid-template-columns: minmax(250px, auto) minmax(300px, 800px);
@@ -190,20 +204,10 @@ table {
   .main {
     margin-top: 1em;
   }
-}
 
-.something {
-  background: #fff;
-  padding: 0.5em 2em;
-  position: relative;
-  margin: 1.5em -.5em;
-  border-radius: 0.25em;
-  box-shadow:
-    -1px 2px 10px 1px rgba(46, 41, 51, 0.08),
-    1px 2px 5px rgba(71, 63, 79, 0.08);
-  transition:
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  .something {
+    padding: 0.5em 2em;
+  }
 }
 
 /* Footer */
@@ -238,6 +242,16 @@ table {
 }
 
 /* tags */
+.main ul {
+  list-style: none;
+  padding: 0;
+  /*padding: 0 1em;*/
+}
+
 .main ul > li + li {
   margin: 10px 0px;
+}
+
+.main ul li a {
+  line-height: 1.6;
 }
