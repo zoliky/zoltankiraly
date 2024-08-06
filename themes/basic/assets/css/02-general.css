@@ -43,6 +43,8 @@ p {
 }
 
 a {
+  /*color: #1F4EA1;*/
+  color: #2753a6;
   text-decoration: none;
   background-color: transparent;
 }
@@ -58,6 +60,12 @@ figure {
 /* Blog posts */
 figure img {
   width: 100%;
+}
+
+time {
+  /*color: #8b3060;*/
+  /*color: #af4a88;*/
+  color: #963271;
 }
 
 .grid-container {
