@@ -4,21 +4,12 @@
     <article class="blog-post">
       <header>
         <h2>{{ .Title }}</h2>
-      </header>
-      <section class="post-content">
-        {{ .Content }}
-      </section>
-      <section class="blog-meta">
         <p>Posted on 
         <time datetime="{{ .Date | dateFormat "2006-01-02" }}">{{ .Date | dateFormat "January 2, 2006" }}</time>
         <span class="posted-by">by {{ .Params.author }}</span></p>
-        {{ with .Params.tags }}
-        <p>In
-          {{ range . }}
-          <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
-          {{ end }}
-        </p>
-        {{ end }}
+      </header>
+      <section class="post-content">
+        {{ .Content }}
       </section>
       {{ $related := .Site.RegularPages.Related . | first 5 }}
       {{ with $related }}
