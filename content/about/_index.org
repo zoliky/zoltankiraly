@@ -6,6 +6,8 @@ draft: false
 
 This website is under construction. There is no fixed time for when it will be completed. I might start adding content while the design remains incomplete for a period of time, but this will not affect the readability of the information.
 
-Places you can find me online: [[https://github.com/zoliky][Github]], [[https://linkedin.com/in/zoliky][LinkedIn]], [[https://x.com/zoliky][Twitter]], [[https://www.facebook.com/zoliky][Facebook]]
+I believe everyone should have their own website because it's a space you completely control and own. Relying on big tech companies like Facebook means risking your privacy and authenticity. Facebook, in particular, is a shallow place for real connections; sometimes, it's almost like calling it 'faKebook,' with the 'c' swapped for a 'k,' because that’s what it truly is, a false environment.
 
-Love letters can be addressed to: [[mailto:public@zoltankiraly.com][public@zoltankiraly.com]]
+Luke Smith is well known in the Linux community. While I'm not a follower of his work, I found his video on this topic to be very to the point. You can check it out here.
+
+{{< youtube bdKZVIGRAKQ >}}

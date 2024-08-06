@@ -19,6 +19,8 @@ draft: false
 
 When it comes to installing Emacs on FreeBSD, you have a few options. The easiest method is to use the binary package with the following command:
 
+*bold* /italic/ _underscore_ ~code~ =verbatim= +strikethrough+
+
 <!--more-->
 
 #+begin_src sh
@@ -30,6 +32,8 @@ Another option is to use the FreeBSD ports system:
 #+begin_src sh
 # cd /usr/ports/editors/emacs && make install clean
 #+end_src
+
+*bold* /italic/ _underscore_ ~code~ =verbatim= +strikethrough+
 
 However, there might be times when you need to install Emacs from the official tar.xz source code. This could be because a new version is available that hasn't made it into the ports or binary packages yet, or because you want to compile Emacs with specific options to suit your needs. In this blog post, I will cover how to build Emacs from the official source code, giving you the flexibility to customize your installation exactly how you want it.
 
