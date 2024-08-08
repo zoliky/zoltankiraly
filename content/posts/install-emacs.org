@@ -19,8 +19,6 @@ draft: false
 
 When it comes to installing Emacs on FreeBSD, you have a few options. The easiest method is to use the binary package with the following command:
 
-*bold* /italic/ _underscore_ ~code~ =verbatim= +strikethrough+
-
 <!--more-->
 
 #+begin_src sh
@@ -33,19 +31,9 @@ Another option is to use the FreeBSD ports system:
 # cd /usr/ports/editors/emacs && make install clean
 #+end_src
 
-*bold* /italic/ _underscore_ ~code~ =verbatim= +strikethrough+
-
 However, there might be times when you need to install Emacs from the official tar.xz source code. This could be because a new version is available that hasn't made it into the ports or binary packages yet, or because you want to compile Emacs with specific options to suit your needs. In this blog post, I will cover how to build Emacs from the official source code, giving you the flexibility to customize your installation exactly how you want it.
 
 Please note that the instructions provided here were tested on FreeBSD 14.1-RELEASE running an Xorg environment.
-
-Before making any changes, it's a good idea to take a snapshot of your system if you have FreeBSD installed on ZFS. This way, you can easily revert back if something goes wrong. To create a new snapshot, use the following command:
-
-#+begin_src sh
-# bectl create 2024-aug-04-before-installing-emacs
-#+end_src
-
-Taking snapshots uses virtually no space and is completed in a fraction of a second. If you need to go back, simply select the snapshot in the FreeBSD boot menu, which is the first menu that shows up after you reboot your computer.
 
 Install the following packages required for compiling Emacs:
 
@@ -94,29 +82,3 @@ Finally, you can start Emacs by navigating to the ~.local/emacs/bin~ directory a
 $ cd ~/.local/emacs/bin
 $ ./emacs
 #+end_src
-
-You can remove the snapshot if you wish, although it's not necessary. As mentioned earlier, snapshots take up virtually no space, and you can have thousands of them without any problem.
-
-#+begin_src sh
-# bectl destroy 2024-aug-04-before-installing-emacs
-#+end_src
-
-I will extend this blog post to include instructions on how to create desktop icons for easier access.
-
-#+begin_quote
-This is a quote. Let's see how it looks.
-
-Second line in the quote
-#+end_quote
-
-I will extend this blog post to include instructions on how to create desktop icons for easier access.
-
-#+caption: Table 1. Caption
-| First Column | Second Column | Third Column |
-|--------------+---------------+--------------|
-| First row    |             8 |            7 |
-| Second row   |             8 |            2 |
-| Third row    |             7 |            9 |
-| Fourth row   |             7 |            8 |
-
-I will extend this blog post to include instructions on how to create desktop icons for easier access.
