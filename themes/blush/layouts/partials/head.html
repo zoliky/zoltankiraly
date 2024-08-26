@@ -4,4 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s - %s" .Title site.Title }}{{ end }}</title>
+
+  {{ if site.Params.twittercard -}}
+    {{ "<!-- Twitter card -->" | safeHTML }}
+    {{ template "_internal/twitter_cards.html" . }}
+  {{ end -}}
+
+  {{ if site.Params.opengraph -}}
+    {{ "<!-- Facebook OpenGraph -->" | safeHTML }}
+    {{ template "_internal/opengraph.html" . }}
+  {{ end -}}
 </head>
