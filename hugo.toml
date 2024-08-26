@@ -23,3 +23,7 @@ theme         = "blush"
   images      = ["site-social.jpg"]
   twittercard = true
   opengraph   = true
+
+[params.logo]
+  path        = ""
+  alt         = "" # Falls back to site title if empty
