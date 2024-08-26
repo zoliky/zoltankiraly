@@ -12,3 +12,14 @@ title         = "Zoltan Kiraly"
 baseURL       = "https://zoltankiraly.com"
 languageCode  = "en-US"
 theme         = "blush"
+
+# ----------------------------------------------------------------------------
+# Default site params
+# ----------------------------------------------------------------------------
+[params]
+  author      = "Zoltan Kiraly"
+  description = "Zoltan Kiraly"
+  copyright   = "© {currentYear} Zoltan Kiraly"
+  images      = ["site-social.jpg"]
+  twittercard = true
+  opengraph   = true
