@@ -15,6 +15,10 @@
     {{ template "_internal/opengraph.html" . }}
   {{ end -}}
 
+  {{ "<!-- Locales -->" | safeHTML }}
+  <link rel="alternate" href="{{ site.Home.Permalink }}hu" hreflang="hu">
+  <link rel="alternate" href="{{ site.Home.Permalink }}" hreflang="x-default">
+
   {{ with .OutputFormats.Get "rss" -}}
     {{ "<!-- RSS -->" | safeHTML }}
     {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
