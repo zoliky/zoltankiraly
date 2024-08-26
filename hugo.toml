@@ -1,0 +1,14 @@
+# ----------------------------------------------------------------------------
+# FILE        : hugo.toml
+# DESCRIPTION : Hugo configuration file
+# AUTHOR      : Zoltán Király <public@zoltankiraly.com>
+# CREATED     : 2024-08-26
+# ----------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------
+# General configuration
+# ----------------------------------------------------------------------------
+title         = "Zoltan Kiraly"
+baseURL       = "https://zoltankiraly.com"
+languageCode  = "en-US"
+theme         = "blush"

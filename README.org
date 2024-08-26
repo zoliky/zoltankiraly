@@ -1,0 +1,12 @@
+#+title: Zoltán Király's Website
+#+author: Zoltán Király
+#+email: public@zoltankiraly.com
+#+date: [2024-08-26 Mon]
+
+** About
+
+This repository contains the source code for the website at https://zoltankiraly.com
+
+** Contact
+
+Questions regarding the website can be addressed to public@zoltankiraly.com
