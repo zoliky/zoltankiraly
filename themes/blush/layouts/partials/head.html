@@ -23,4 +23,7 @@
     {{ "<!-- RSS -->" | safeHTML }}
     {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{ end }}
+
+  {{ "<!-- Theme color for the browser UI -->" | safeHTML }}
+  <meta name="theme-color" content="#ffffff">
 </head>
