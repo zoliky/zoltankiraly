@@ -2,10 +2,12 @@
 <html lang="{{ or site.Language.LanguageCode }}">
 {{ partial "head.html" . }}
 <body>
-  {{ partialCached "header.html" . }}
-  <main class="main">
-    {{ block "main" . }}{{ end }}
-  </main>
-  {{ partialCached "footer.html" . }}
+  <div class="container">
+    {{ partialCached "header.html" . }}
+    <main class="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partialCached "footer.html" . }}
+  </div>
 </body>
 </html>
