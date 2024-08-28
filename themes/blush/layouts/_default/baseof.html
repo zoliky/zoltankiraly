@@ -2,9 +2,7 @@
 <html lang="{{ or site.Language.LanguageCode }}">
 {{ partial "head.html" . }}
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
+  {{ partialCached "header.html" . }}
   <main>
     {{ block "main" . }}{{ end }}
   </main>
