@@ -3,6 +3,7 @@
   line-height: 1.5;
   box-sizing: border-box;
   --theme-bg-color: #fff7f7;
+  --heading-color: #a01f64;
 }
 
 *,
@@ -15,6 +16,12 @@ body {
   margin: 0;
   padding: 0;
   background: var(--theme-bg-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
 }
 
 .container {
