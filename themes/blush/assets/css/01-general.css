@@ -16,3 +16,31 @@ body {
   padding: 0;
   background: var(--theme-bg-color);
 }
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (min-width: 52em) {
+  .container {
+    grid-template-columns: minmax(300px, 800px);
+    justify-content: center;
+  }
+}
