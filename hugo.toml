@@ -27,3 +27,19 @@ theme         = "blush"
 [params.logo]
   path        = ""
   alt         = "" # Falls back to site title if empty
+
+# ----------------------------------------------------------------------------
+# Posts
+# ----------------------------------------------------------------------------
+# Permalinks
+[permalinks]
+  posts = "posts/:year/:month/:slug"
+  year  = "/posts/:slug/"
+  month = "/posts/:slug/"
+
+# Taxonomies
+[taxonomies]
+  year     = "year"
+  month    = "month"
+  tag      = "tags"
+  category = "categories"
