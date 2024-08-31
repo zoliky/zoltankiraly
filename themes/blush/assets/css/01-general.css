@@ -24,6 +24,11 @@ h3 {
   color: var(--heading-color);
 }
 
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .container {
   display: grid;
   grid-gap: 10px;
