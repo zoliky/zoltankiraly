@@ -50,6 +50,17 @@ a {
   grid-area: footer;
 }
 
+.screen-readers {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
 @media (min-width: 52em) {
   .container {
     grid-template-columns: minmax(300px, 800px);
