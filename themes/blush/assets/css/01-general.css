@@ -58,6 +58,25 @@ blockquote {
   }
 }
 
+table {
+  border-collapse: collapse;
+  margin: 0 0 1.5em;
+  width: 100%;
+
+  & th, & td {
+    padding: .5em;
+    text-align: left;
+  }
+
+  & tr {
+    border-bottom: 1px solid #eee;
+  }
+
+  &.lntable pre {
+    padding: 0;
+  }
+}
+
 .container {
   display: grid;
   grid-gap: 10px;
