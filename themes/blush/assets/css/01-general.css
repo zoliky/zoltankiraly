@@ -29,6 +29,21 @@ a {
   background-color: transparent;
 }
 
+figure {
+  margin: 0;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+img {
+  /* Fixes a glitch in Firefox causing the alt text of the image
+  to be briefly displayed before the image loads. */
+  color: transparent;
+}
+
 .container {
   display: grid;
   grid-gap: 10px;
