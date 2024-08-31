@@ -109,6 +109,17 @@ table {
   clip: rect(0, 0, 0, 0);
 }
 
+/* =Posts
+----------------------------------------------------------------------------*/
+.blog-post {
+  margin: 3em 0 3.5em;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media (min-width: 52em) {
   .container {
     grid-template-columns: minmax(300px, 800px);
