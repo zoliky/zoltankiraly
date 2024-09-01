@@ -77,6 +77,29 @@ table {
   }
 }
 
+.highlight pre {
+  padding: .8em;
+  overflow: auto;
+  border-radius: 0.3125em;
+  background-color: #f0f0f0 !important;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #bbbbbb;
+  }
+}
+
 .container {
   display: grid;
   grid-gap: 10px;
