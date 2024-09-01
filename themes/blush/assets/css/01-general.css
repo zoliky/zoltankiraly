@@ -94,10 +94,6 @@ table {
   grid-area: main;
 }
 
-.footer {
-  grid-area: footer;
-}
-
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -168,6 +164,33 @@ table {
 
   & li {
     margin: 5px 0;
+  }
+}
+
+/* =Footer
+----------------------------------------------------------------------------*/
+.footer {
+  grid-area: footer;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #707070;
+    margin-bottom: 20px;
+  }
+
+  & > :first-child {
+    color: #2f5f9f;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  & > :last-child {
+    margin-top: 0;
+    font-size: 0.8em;
   }
 }
 
