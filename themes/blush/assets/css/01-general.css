@@ -120,6 +120,28 @@ table {
   }
 }
 
+/* =404
+----------------------------------------------------------------------------*/
+.page-404 {
+  margin: 4em 0 2em;
+}
+
+.page-404-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  & img {
+    width: 300px;
+  }
+
+  & h2 {
+    margin: 2em 0 0 0;
+  }
+}
+
 @media (min-width: 52em) {
   .container {
     grid-template-columns: minmax(300px, 800px);
