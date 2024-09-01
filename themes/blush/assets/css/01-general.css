@@ -155,6 +155,22 @@ table {
   }
 }
 
+/* =Taxonomies
+----------------------------------------------------------------------------*/
+.tags {
+  display: grid;
+  grid-gap: 5px;
+  padding: 0;
+  margin: 3em 0 0;
+  list-style-type: none;
+  grid-template-columns: 1fr;
+  width: 880px;
+
+  & li {
+    margin: 5px 0;
+  }
+}
+
 /* =404
 ----------------------------------------------------------------------------*/
 .page-404 {
@@ -181,5 +197,15 @@ table {
   .container {
     grid-template-columns: minmax(300px, 800px);
     justify-content: center;
+  }
+
+  .tags {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 30em) and (max-width: 52em) {
+  .tags {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
