@@ -98,6 +98,41 @@ table {
   grid-area: footer;
 }
 
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1em auto;
+  padding: 0;
+
+  .page-item {
+    border: 1px solid #ddd;
+    flex: 1;
+    text-align: center;
+    width: 5em;
+
+    &.active {
+      background-color: #333;
+      .page-link {
+        color: #fff;
+      }
+    }
+
+    &.disabled {
+      .page-link {
+        color: #ddd;
+      }
+    }
+  }
+
+  .page-link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0.3em 0.8em;
+  }
+}
+
 .screen-readers {
   position: absolute;
   border: 0;
