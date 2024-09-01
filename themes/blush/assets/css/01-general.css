@@ -107,6 +107,7 @@ table {
     "header"
     "main"
     "footer";
+  padding: 0 1em;
 }
 
 .header {
