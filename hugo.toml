@@ -13,6 +13,13 @@ baseURL       = "https://zoltankiraly.com"
 languageCode  = "en-US"
 theme         = "blush"
 
+# Fall back to English if no translations are available
+defaultContentLanguage = "en"
+
+# Disabled languages
+# e.g. ["hu", "es", "de"]
+disableLanguages       = []
+
 # ----------------------------------------------------------------------------
 # Default site params
 # ----------------------------------------------------------------------------
@@ -27,6 +34,58 @@ theme         = "blush"
 [params.logo]
   path        = ""
   alt         = "" # Falls back to site title if empty
+
+# ----------------------------------------------------------------------------
+# Languages
+# ----------------------------------------------------------------------------
+[languages]
+
+  # English
+  # --------------------------------------------------------------------------
+  [languages.en]
+    weight       = 1
+    languageCode = "en-US"
+    languageName = "English"
+
+    # Menu
+    [[languages.en.menu.main]]
+      name   = "Home"
+      url    = "/"
+      weight = 1
+
+    [[languages.en.menu.main]]
+      name   = "About"
+      url    = "/about/"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      name   = "Blog"
+      url    = "/posts/"
+      weight = 3
+
+  # Hungarian
+  # --------------------------------------------------------------------------
+  # Override general configuration
+  [languages.hu]
+    weight       = 2
+    languageCode = "hu"
+    languageName = "Hungarian"
+
+    # Menu
+    [[languages.hu.menu.main]]
+      name   = "Címlap"
+      url    = "/"
+      weight = 1
+
+    [[languages.hu.menu.main]]
+      name   = "Rólam"
+      url    = "/about/"
+      weight = 2
+
+    [[languages.hu.menu.main]]
+      name   = "Blog"
+      url    = "/posts/"
+      weight = 3
 
 # ----------------------------------------------------------------------------
 # Posts
