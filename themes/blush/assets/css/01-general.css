@@ -137,6 +137,29 @@ table {
   grid-area: main;
 }
 
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 1.7em;
+  line-height: 1.8;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #ffffff;
+  letter-spacing: .10em;
+  padding: .57em 1.8em;
+  border: 1px solid transparent;
+  background: #3b9ba7;
+  transition: transform ease-in-out 250ms;
+  box-shadow: -4px 3px 8px -3px rgba(0, 0, 0, .5);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .pagination {
   display: flex;
   justify-content: space-between;
