@@ -29,6 +29,25 @@ a {
   background-color: transparent;
 }
 
+ul {
+  padding-left: 1.8em;
+
+  & li {
+    padding: .1em 0;
+
+    & > p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &::marker {
+      color: #1f93a1;
+      font-size: 1.2em;
+      font-weight: 800;
+    }
+  }
+}
+
 figure {
   margin: 0;
 
