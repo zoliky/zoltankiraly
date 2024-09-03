@@ -13,6 +13,8 @@ baseURL       = "https://zoltankiraly.com"
 languageCode  = "en-US"
 theme         = "blush"
 
+pygmentsUseClasses     = true
+
 # Fall back to English if no translations are available
 defaultContentLanguage = "en"
 
