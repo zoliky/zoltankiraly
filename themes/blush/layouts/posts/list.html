@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="blog">
   <div class="blog-container">
-    <h2>{{ .Title }}</h2>
+    <h2 class="screen-readers">{{ .Title }}</h2>
     {{ range $p := .Paginator.Pages }}
     <article class="blog-post">
       <header>
