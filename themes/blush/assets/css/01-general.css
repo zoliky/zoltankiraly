@@ -126,7 +126,6 @@ table {
     "header"
     "main"
     "footer";
-  padding: 0 1em;
 }
 
 .header {
@@ -135,6 +134,8 @@ table {
 
 .main {
   grid-area: main;
+  padding: 0 1em;
+  min-width: 0;
 }
 
 .button {
