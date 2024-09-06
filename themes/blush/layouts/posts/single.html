@@ -1,21 +1,21 @@
 {{ define "main" }}
-<section class="blog">
+<div class="blog">
   <div class="blog-container">
     <article class="blog-post">
       <header>
         <h2>{{ .Title }}</h2>
       </header>
       {{ with or (.Resources.GetMatch "featured.*") (.Resources.Get .Params.featuredimage) }}
-      <section class="featured-image">
+      <div class="featured-image">
         <a href="{{ .RelPermalink }}">
           <img src="{{ .RelPermalink }}" loading="lazy" width="{{ .Width }}" height="{{ .Height }}" alt="featuredimage">
         </a>
-      </section>
+      </div>
       {{ end }}
-      <section class="post-content">
+      <div class="post-content">
         {{ .Content }}
-      </section>
-      <section class="blog-meta">
+      </div>
+      <div class="blog-meta">
         <p>Posted on 
         <time datetime="{{ .Date | dateFormat "2006-01-02" }}">{{ .Date | dateFormat "January 2, 2006" }}</time>
         <span class="posted-by">by {{ .Params.author }}</span></p>
@@ -26,19 +26,19 @@
           {{ end }}
         </p>
         {{ end }}
-      </section>
+      </div>
       {{ $related := .Site.RegularPages.Related . | first 5 }}
       {{ with $related }}
-      <section class="related">
+      <footer class="related">
         <h3>Related posts</h3>
         <ul>
           {{ range . }}
           <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
           {{ end }}
         </ul>
-      </section>
+      </footer>
       {{ end }}
     </article>
   </div>
-</section>
+</div>
 {{ end }}
