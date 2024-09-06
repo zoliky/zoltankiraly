@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="blog">
+<div class="blog">
   <div class="blog-container">
     <h2 class="screen-readers">{{ .Title }}</h2>
     {{ range $p := .Paginator.Pages }}
@@ -8,15 +8,15 @@
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       </header>
       {{ with or (.Resources.GetMatch "featured.*") (.Resources.Get .Params.featuredimage) }}
-      <section class="featured-image">
+      <div class="featured-image">
         <a href="{{ $p.RelPermalink }}">
           <img src="{{ .RelPermalink }}" loading="lazy" width="{{ .Width }}" height="{{ .Height }}" alt="featuredimage">
         </a>
-      </section>
+      </div>
       {{ end }}
-      <section class="post-summary">
+      <div class="post-summary">
         {{ .Summary }}
-      </section>
+      </div>
       <footer>
         <span>Posted on </span>
         <time datetime="{{ .Date | dateFormat "2006-01-02" }}">{{ .Date | dateFormat "January 2, 2006" }}</time>
@@ -25,6 +25,6 @@
     </article>
     {{ end }}
   </div>
-</section>
+</div>
 {{ template "_internal/pagination.html" . }}
 {{ end }}
