@@ -3,6 +3,7 @@
   line-height: 1.5;
   box-sizing: border-box;
   --theme-bg-color: #fff7f7;
+  --header-bg-color: #a01f64;
   --heading-color: #a01f64;
 }
 
@@ -129,7 +130,23 @@ table {
 }
 
 .header {
+  background: var(--header-bg-color);
   grid-area: header;
+  height: 80px;
+}
+
+.header-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.site-title a {
+  color: #ffffff;
 }
 
 .main {
@@ -391,13 +408,17 @@ table {
 
 @media (min-width: 52em) {
   .container {
-    grid-template-columns: minmax(300px, 800px);
+    grid-template-columns: minmax(1em, 1fr) minmax(300px, 960px) minmax(1em, 1fr);
     justify-content: center;
+    grid-template-areas:
+      "header header header"
+      ". main ."
+      ". footer .";
   }
 
   .main-navigation {
     & ul {
-      background: transparent;
+      background: var(--header-bg-color);
       border: 0;
       padding: 0;
       display: block;
@@ -408,6 +429,8 @@ table {
         display: inline-block;
 
         & a {
+          color: #ffffff;
+          font-size: 1.1em;
           padding: 1em 1.25em;
         }
       }
