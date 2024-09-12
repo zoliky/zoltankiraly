@@ -13,21 +13,82 @@
   box-sizing: inherit;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/merriweather-v30-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v18-latin-700.woff2") format("woff2");
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
   background: var(--theme-bg-color);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
   color: var(--heading-color);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1.2em;
 }
 
 a {
   text-decoration: none;
   background-color: transparent;
+}
+
+p {
+  color: #454545;
+  font-weight: 400;
+  font-size: 1.15em;
+  line-height: 1.6;
 }
 
 ul {
