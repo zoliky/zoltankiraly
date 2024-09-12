@@ -5,6 +5,7 @@
   --theme-bg-color: #edeae8;
   --header-bg-color: #a01f64;
   --heading-color: #a01f64;
+  --button-bg-color: #008080;
 }
 
 *,
@@ -423,6 +424,38 @@ table {
       color: var(--heading-color);
     }
   }
+
+  & > header {
+    margin-bottom: 2.4em;
+  }
+}
+
+.featured-image {
+  margin: 3em 0 0;
+}
+
+.post-published {
+  display: flex;
+  align-items: center;
+}
+
+.post-summary {
+  margin-bottom: 2.4em;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  stroke-width: 1.33;
+}
+
+a.read-more {
+  background: var(--button-bg-color);
+  color: #ffffff;
+  font-weight: 400;
+  display: inline-block;
+  padding: .40em .8em;
 }
 
 /* =Taxonomies
