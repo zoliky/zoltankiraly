@@ -61,8 +61,8 @@ disableLanguages       = []
       weight = 2
 
     [[languages.en.menu.main]]
-      name   = "Blog"
-      url    = "/posts/"
+      name   = "Tags"
+      url    = "/tags/"
       weight = 3
 
   # Hungarian
