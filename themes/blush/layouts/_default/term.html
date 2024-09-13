@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="card">
   <h2>{{ .Title }}</h2>
   {{ .Content }}
   <ul>
@@ -7,4 +8,5 @@
     {{ end }}
   </ul>
   {{ template "_internal/pagination.html" . }}
+</div>
 {{ end }}
