@@ -314,8 +314,8 @@ table {
     display: block;
     position: relative;
     height: 14px;
-    border-top: 4px solid #000;
-    border-bottom: 4px solid #000;
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
     text-decoration: none;
     color: transparent;
 
@@ -326,7 +326,7 @@ table {
       top: 5px;
       left: 0;
       right:0;
-      background:#000;
+      background: #ffffff;
       transform: rotate(0deg);
     }
   }
