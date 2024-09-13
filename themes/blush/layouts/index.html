@@ -1,3 +1,42 @@
 {{ define "main" }}
-  {{ .Content }}
+<div class="blog">
+  <div class="blog-container">
+    <h2 class="screen-readers">{{ .Title }}</h2>
+    {{ range $p := (.Paginate (where site.RegularPages "Type" "posts")).Pages }}
+    <article class="blog-post">
+      <header>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <div class="post-published">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+            <circle cx="18" cy="18" r="4" />
+            <path d="M15 3v4" />
+            <path d="M7 3v4" />
+            <path d="M3 11h16" />
+            <path d="M18 16.496v1.504l1 1" />
+          </svg>
+          <time datetime="{{ .Date | dateFormat "2006-01-02" }}">{{ .Date | dateFormat "January 2, 2006" }}</time>
+        </div>
+      </header>
+      {{ with or (.Resources.GetMatch "featured.*") (.Resources.Get .Params.featuredimage) }}
+      <div class="featured-image">
+        <a href="{{ $p.RelPermalink }}">
+          <img src="{{ .RelPermalink }}" loading="lazy" width="{{ .Width }}" height="{{ .Height }}" alt="featuredimage">
+        </a>
+      </div>
+      {{ end }}
+      <div class="post-summary">
+        {{ .Summary }}
+      </div>
+      <footer>
+        {{- if .Truncated -}}
+        <p><a class="read-more" href="{{ .RelPermalink }}">Read more&hellip;</a></p>
+        {{- end -}}
+      </footer>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ template "_internal/pagination.html" . }}
 {{ end }}
