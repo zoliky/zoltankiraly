@@ -49,6 +49,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: #454545;
   font-family: "Inter", sans-serif;
   background: var(--theme-bg-color);
 }
@@ -86,19 +87,30 @@ a {
 }
 
 p {
-  color: #454545;
+  font-size: 1.15rem;
   font-weight: 400;
-  font-size: 1.15em;
   line-height: 1.6;
+
+  & code.verbatim {
+    font-size: 1em;
+    padding: 0 .2em;
+  }
+
+  & code:not(.verbatim) {
+    font-size: .8em;
+    padding: .2em .4em;
+    background: #f0f0f0;
+    border-radius: .4em;
+  }
 }
 
 ul {
+  font-size: 1.15rem;
   padding-left: 1.8em;
 
   & li {
-    padding: .1em 0;
-
     & > p {
+      font-size: 1em;
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -107,6 +119,21 @@ ul {
       color: #1f93a1;
       font-size: 1.2em;
       font-weight: 800;
+    }
+  }
+}
+
+ol {
+  font-size: 1.15rem;
+  padding-left: 1.8em;
+
+  & li {
+    padding: .1em 0;
+
+    & > p {
+      font-size: 1em;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -142,7 +169,8 @@ blockquote {
 
 table {
   border-collapse: collapse;
-  margin: 0 0 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 1.15rem;
   width: 100%;
 
   & th, & td {
@@ -154,16 +182,25 @@ table {
     border-bottom: 1px solid #eee;
   }
 
-  &.lntable pre {
-    padding: 0;
+  &.lntable tr {
+    border-bottom: none;
   }
 }
 
-.highlight pre {
+pre {
+  font-size: 1em;
+}
+
+.highlight .chroma {
+  margin: 0;
   padding: .8em;
   overflow: auto;
-  border-radius: 0.3125em;
+  font-size: 1.15rem;
   background-color: #f0f0f0 !important;
+
+  & .hl {
+    display: block;
+  }
 
   &::-webkit-scrollbar {
     width: 10px;
@@ -180,6 +217,14 @@ table {
     border-radius: 10px;
     background-color: #bbbbbb;
   }
+
+  & table {
+    width: initial;
+  }
+}
+
+.highlight .lntable .chroma {
+  padding: 0;
 }
 
 .container {
