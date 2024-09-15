@@ -82,6 +82,7 @@ h5 {
 }
 
 a {
+  color: #0056a0;
   text-decoration: none;
   background-color: transparent;
 }
@@ -135,6 +136,16 @@ ol {
       margin-top: 0;
       margin-bottom: 0;
     }
+  }
+}
+
+dl {
+  margin: 1.5em 0;
+  line-height: 1.6;
+
+  & dd {
+    margin-top: .2em;
+    margin-bottom: 1.2em;
   }
 }
 
@@ -200,6 +211,7 @@ pre {
 
   & .hl {
     display: block;
+    background-color: #d3d3d3;
   }
 
   &::-webkit-scrollbar {
