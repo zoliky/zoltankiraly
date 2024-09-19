@@ -242,6 +242,8 @@ pre {
 .container {
   display: grid;
   grid-gap: 10px;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header"
     "main"
