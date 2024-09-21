@@ -13,8 +13,6 @@ baseURL       = "https://zoltankiraly.com"
 languageCode  = "en-US"
 theme         = "blush"
 
-pygmentsUseClasses     = true
-
 # Fall back to English if no translations are available
 defaultContentLanguage = "en"
 
@@ -104,3 +102,10 @@ disableLanguages       = []
   month    = "month"
   tag      = "tags"
   category = "categories"
+
+# ----------------------------------------------------------------------------
+# Syntax highlighting
+# ----------------------------------------------------------------------------
+[markup]
+  [markup.highlight]
+    noClasses = false
