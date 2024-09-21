@@ -266,6 +266,11 @@ pre {
   height: 100%;
 }
 
+.logo {
+  margin-top: .1em;
+  margin-left: .5em;
+}
+
 .site-title a {
   color: #ffffff;
 }
@@ -368,6 +373,7 @@ pre {
   padding: 0;
   cursor: pointer;
   outline: none;
+  margin-top: .5em;
   background: transparent;
   width: 30px;
   height: 22px;
@@ -596,6 +602,11 @@ a.read-more {
       "header header header"
       ". main ."
       ". footer .";
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .main-navigation {
