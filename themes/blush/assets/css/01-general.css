@@ -452,10 +452,6 @@ pre {
         font-weight: 600;
         text-decoration: none;
 
-        &:focus {
-          outline: thin dotted;
-        }
-
         &:hover {
           color: #c0c0c0;
         }
