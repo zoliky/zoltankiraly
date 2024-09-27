@@ -154,6 +154,17 @@ figure {
   }
 }
 
+figcaption {
+  margin: .5em 0 1.5em;
+  font-size: 1em;
+  text-align: center;
+
+  & p {
+    font-size: 1em;
+    margin-block: 0;
+  }
+}
+
 img {
   /* Fixes a glitch in Firefox causing the alt text of the image
   to be briefly displayed before the image loads. */
