@@ -616,6 +616,14 @@ a.read-more {
   & > :last-child {
     margin-top: 0;
     font-size: 0.8em;
+
+    & a {
+      color: #454545;
+
+      &:hover {
+        color: #1d2020;
+      }
+    }
   }
 }
 
