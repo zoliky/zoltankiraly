@@ -12,6 +12,7 @@ CREATED     : 2024-08-26
   --theme-bg-color: #edeae8;
   --header-bg-color: #a01f64;
   --heading-color: #a01f64;
+  --link-color: #0056a0;
   --button-bg-color: #008080;
 }
 
@@ -89,7 +90,7 @@ h5 {
 }
 
 a {
-  color: #0056a0;
+  color: var(--link-color);
   text-decoration: none;
   background-color: transparent;
 }
