@@ -432,50 +432,38 @@ pre {
   padding: 0;
   cursor: pointer;
   outline: none;
-  margin-top: .5em;
+  margin-right: .5em;
   background: transparent;
-  width: 30px;
-  height: 22px;
   overflow: hidden;
   outline: 0;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 700;
+  -webkit-appearance: none;
+  appearance: none;
 
-  & span {
-    display: block;
-    position: relative;
-    height: 14px;
-    border-top: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
-    text-decoration: none;
-    color: transparent;
-
-    &::before, &::after {
-      content: "";
-      position: absolute;
-      height: 4px;
-      top: 5px;
-      left: 0;
-      right:0;
-      background: #ffffff;
-      transform: rotate(0deg);
-    }
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin: 0 10px 0 2px;
+    vertical-align: middle;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: translateY(-35%) rotate(45deg) scale(1);
+    transition: 0.3s ease;
   }
 }
 
-.open .menu-toggle span {
-  border-color: transparent;
-
-  &::before, &::after {
-    border-radius: 10px;
-    width: 26px;
-    height: 5px;
-  }
+.open .menu-toggle {
+  background: #ffffff;
+  color: #454545;
 
   &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
+    border-right: 2px solid var(--header-bg-color);
+    border-bottom: 2px solid var(--header-bg-color);
+    transform: translateY(1px) rotate(225deg) scale(1);
   }
 }
 
