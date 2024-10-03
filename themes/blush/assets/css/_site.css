@@ -480,7 +480,7 @@ pre {
   & ul {
     display: none;
     margin: 0;
-    background: #fff;
+    background: var(--header-bg-color);
     list-style: none;
     text-align: left;
 
@@ -495,7 +495,7 @@ pre {
       & a {
         display: block;
         padding: .8em 0;
-        color: #222;
+        color: #ffffff;
         font-weight: 600;
         text-decoration: none;
 
