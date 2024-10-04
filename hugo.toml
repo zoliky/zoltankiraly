@@ -25,7 +25,7 @@ disableLanguages       = []
 # ----------------------------------------------------------------------------
 [params]
   author      = "Zoltan Kiraly"
-  description = "Zoltan Kiraly"
+  description = "A personal website focused on technology, Linux, Emacs, and a variety of other topics."
   copyright   = "© {currentYear} Zoltan Kiraly"
   images      = ["site-social.jpg"]
   twittercard = true
