@@ -18,7 +18,7 @@
 /* KeywordReserved */ .chroma .kr { color:#008000;font-weight:bold }
 /* KeywordType */ .chroma .kt { color:#b00040 }
 /* Name */ .chroma .n {  }
-/* NameAttribute */ .chroma .na { color:#7d9029 }
+/* NameAttribute */ .chroma .na { color:#796b01 }
 /* NameBuiltin */ .chroma .nb { color:#008000 }
 /* NameBuiltinPseudo */ .chroma .bp {  }
 /* NameClass */ .chroma .nc { color:#00f;font-weight:bold }
@@ -69,8 +69,8 @@
 /* CommentMultiline */ .chroma .cm { color:#408080;font-style:italic }
 /* CommentSingle */ .chroma .c1 { color:#408080;font-style:italic }
 /* CommentSpecial */ .chroma .cs { color:#408080;font-style:italic }
-/* CommentPreproc */ .chroma .cp { color:#bc7a00 }
-/* CommentPreprocFile */ .chroma .cpf { color:#bc7a00 }
+/* CommentPreproc */ .chroma .cp { color:#a25c01 }
+/* CommentPreprocFile */ .chroma .cpf { color:#a25c01 }
 /* Generic */ .chroma .g {  }
 /* GenericDeleted */ .chroma .gd { color:#a00000 }
 /* GenericEmph */ .chroma .ge { font-style:italic }
