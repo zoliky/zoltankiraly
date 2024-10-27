@@ -1,24 +1,28 @@
-#+title: Test Post
-#+author: Zoltán Király
-#+date: 2024-09-15T01:05:18+02:00
-#+tags[]: tag1 tag2
-#+draft: false
+---
+title: Test Post
+author: Zoltán Király
+date: 2024-09-15T01:05:18+02:00
+tags:
+- tag1
+- tag2
+draft: false
+---
 
 This post is a test to check how different content elements look and to ensure everything displays properly.
 
-# more
+<!--more-->
 
-** Text Formatting
+## Text Formatting
 
-*bold* /italic/ _underlined_ ~code~ =verbatim= +strikethrough+
+**bold** *italic* `code` ~~strikethrough~~
 
 Lorem Ipsum is a filler text commonly used to demonstrate the visual form of a document without relying on meaningful content. Here's an example of Lorem Ipsum text:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-** Lists
+## Lists
 
-*Bulleted List*
+**Bulleted List**
 
 - Painting
 - Gardening
@@ -26,25 +30,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 - Hiking
 - Photography
 
-*Bulleted List with Sub-Lists*
+**Bulleted List with Sub-Lists**
 
 - Painting
-  - Watercolor
-  - Oil Painting
+    - Watercolor
+    - Oil Painting
 - Gardening
-  - Vegetable Gardening
-  - Flower Gardening
+    - Vegetable Gardening
+    - Flower Gardening
 - Cooking
-  - Baking
-  - Grilling
+    - Baking
+    - Grilling
 - Hiking
-  - Trail Hiking
-  - Mountain Hiking
+    - Trail Hiking
+    - Mountain Hiking
 - Photography
-  - Landscape Photography
-  - Portrait Photography
+    - Landscape Photography
+    - Portrait Photography
 
-*Numbered List*
+**Numbered List**
 
 1. Painting
 2. Gardening
@@ -54,25 +58,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Sub-lists are not currently supported for numbered lists.
 
-*Definition List*
+**Definition List**
 
-- Gardening :: The practice of growing and cultivating plants as part of horticulture. It can involve growing flowers, vegetables, herbs, or ornamental plants for enjoyment or food production.
+Gardening
+: The practice of growing and cultivating plants as part of horticulture. It can involve growing flowers, vegetables, herbs, or ornamental plants for enjoyment or food production.
 
-- Photography :: The art or practice of capturing and creating images using a camera. This can include various genres such as landscape, portrait, or wildlife photography, often for artistic or documentary purposes.
+Photography
+: The art or practice of capturing and creating images using a camera. This can include various genres such as landscape, portrait, or wildlife photography, often for artistic or documentary purposes.
 
-- Cooking :: The process of preparing food by combining ingredients and using techniques such as baking, frying, or grilling. It can be pursued as a creative hobby, a practical skill, or a way to explore different cuisines.
+Cooking
+: The process of preparing food by combining ingredients and using techniques such as baking, frying, or grilling. It can be pursued as a creative hobby, a practical skill, or a way to explore different cuisines.
 
-** Code
+## Code
 
-*Inline Code*
+**Inline Code**
 
-Lorem ipsum dolor sit amet, consectetur ~adipiscing~ elit. Sed do eiusmod tempor incididunt ut labore et ~dolore~ magna aliqua. Ut enim ad ~minim veniam~, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lorem ipsum dolor sit amet, consectetur `adipiscing` elit. Sed do eiusmod tempor incididunt ut labore et `dolore` magna aliqua. Ut enim ad `minim veniam`, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-*Code Block*
+**Code Block**
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-#+begin_src html
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -86,11 +93,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
     <script src="index.js"></script>
   </body>
 </html>
-#+end_src
+```
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-*Code Block with Line Numbers*
+**Code Block with Line Numbers**
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -113,7 +120,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-*Code Block with Highlighted Lines*
+**Code Block with Highlighted Lines**
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -136,7 +143,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-** Callout Boxes
+## Callout Boxes
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -164,7 +171,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-** Table
+## Table
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -178,7 +185,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-** Image
+## Image
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -186,7 +193,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-** YouTube
+## YouTube
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -194,7 +201,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-** Instagram
+## Instagram
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
