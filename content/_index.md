@@ -1,4 +1,6 @@
-#+title: Index
-#+draft: false
+---
+title: Index
+draft: false
+---
 
 Content
