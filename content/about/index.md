@@ -1,6 +1,8 @@
-#+title: About
-#+type: about
-#+draft: false
+---
+title: About
+type: about
+draft: false
+---
 
 My passion for technology started when I received my first computer, a Commodore 64, as a child. That experience opened up a whole new world for me, and I've been fascinated by computers ever since.
 
