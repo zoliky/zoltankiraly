@@ -2,9 +2,6 @@
 title: Test Post
 author: Zoltán Király
 date: 2024-09-15T01:05:18+02:00
-tags:
-- tag1
-- tag2
 draft: false
 ---
 
